@@ -20,6 +20,11 @@ const routes: Routes = [
           .then(mod => mod.TeamModule)
       },
       {
+        path: 'staff',
+        loadChildren: () => import('mfe1/StaffModule')
+          .then(mod => mod.StaffModule)
+      },
+      {
         path: '', pathMatch: 'full', redirectTo: 'home'
       }
     ]

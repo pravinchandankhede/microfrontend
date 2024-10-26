@@ -7,6 +7,7 @@ module.exports = withModuleFederationPlugin({
   exposes: {
     './Component': './src/app/app.component.ts',
     './Module': './src/app/modules/team/team.module.ts',
+    './StaffModule': './src/app/modules/staff/staff.module.ts',
   },
 
   shared: {

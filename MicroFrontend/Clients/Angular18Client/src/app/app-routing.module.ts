@@ -15,6 +15,11 @@ const routes: Routes = [
           .then(mod => mod.TeamModule)
       },
       {
+        path: 'staff',
+        loadChildren: () => import('./modules/staff/staff.module')
+          .then(mod => mod.StaffModule)
+      },
+      {
         path: '', pathMatch: 'full', redirectTo: 'home'
       }
     ]
