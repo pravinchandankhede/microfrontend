@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MicroFrontend/.vs/MicroFrontend
+/MicroFrontend/Clients/Angular18Client/.vscode
+/MicroFrontend/Clients/Angular18Client/obj/Debug
+/MicroFrontend/Hosts/AngularHost/.vscode
+/MicroFrontend/Hosts/AngularHost/obj/Debug

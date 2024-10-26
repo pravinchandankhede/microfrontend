@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A3C5F595-3E74-4DCA-A4ED-5BEA5A049D86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{56BB7ADC-EFA2-4D29-AD3A-7CFB537FF4A8}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AngularHost", "Hosts\AngularHost\AngularHost.esproj", "{6442E8DF-C434-4474-8C6A-B5E35233424D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular18Client", "Clients\Angular18Client\Angular18Client.esproj", "{42620B86-B624-483C-9744-66CB091ADDDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6442E8DF-C434-4474-8C6A-B5E35233424D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42620B86-B624-483C-9744-66CB091ADDDE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6442E8DF-C434-4474-8C6A-B5E35233424D} = {A3C5F595-3E74-4DCA-A4ED-5BEA5A049D86}
+		{42620B86-B624-483C-9744-66CB091ADDDE} = {56BB7ADC-EFA2-4D29-AD3A-7CFB537FF4A8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80E81B10-2499-4082-9017-AE25F8012FA4}
+	EndGlobalSection
+EndGlobal
