@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TeamComponent } from './modules/team/team.component';
 
 const routes: Routes = [
   {
     path: 'app',
-    component: TeamComponent,
-    //canActivate: true,
     resolve: {},
     children: [
       {
-        path: 'home',
+        path: 'team',
         loadChildren: () => import('./modules/team/team.module')
           .then(mod => mod.TeamModule)
       },
@@ -32,7 +29,6 @@ const routes: Routes = [
   },
 
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

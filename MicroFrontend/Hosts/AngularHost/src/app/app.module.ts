@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CommonModule } from '@angular/common';
+import { ManifestService } from './services/manifest.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
     CoreModule,
     CommonModule
   ],
-  providers: [],
+  providers: [ManifestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

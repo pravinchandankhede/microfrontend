@@ -1,3 +1,3 @@
-declare module 'mfe1/Module';
-declare module 'mfe1/StaffModule';
+//declare module 'mfe1/Module';
+//declare module 'mfe1/StaffModule';
 

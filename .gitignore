@@ -9,3 +9,6 @@
 /MicroFrontend/Hosts/AngularHost/.vscode
 /MicroFrontend/Hosts/AngularHost/obj/Debug
 /MicroFrontend/Hosts/AngularHost/.vscode/launch.json
+/MicroFrontend/.vs/ProjectEvaluation
+/MicroFrontend/Services/WebService.Services/obj
+/MicroFrontend/Services/WebService.Services/WebService.Services.csproj.user
