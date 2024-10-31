@@ -1,0 +1,19 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  //"dest": "../../dist/mfelibrary",
+  "lib": {
+    "entryFile": "src/app/public-api.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "@angular/animations",
+    "@angular/common",
+    "@angular/compiler",
+    "@angular/core",
+    "@angular/forms",
+    "@angular/platform-browser",
+    "@angular/router",
+    "rxjs",
+    "zone.js",
+    "jest-editor-support"
+  ]
+}

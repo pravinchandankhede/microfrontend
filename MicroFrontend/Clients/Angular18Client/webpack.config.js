@@ -11,6 +11,11 @@ module.exports = withModuleFederationPlugin({
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+      ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+      'mfelibrary': {
+          singleton: true,
+          strictVersion: true,
+          requiredVersion: '0.0.1',
+      },
   },
 });

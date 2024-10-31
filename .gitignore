@@ -12,3 +12,10 @@
 /MicroFrontend/.vs/ProjectEvaluation
 /MicroFrontend/Services/WebService.Services/obj
 /MicroFrontend/Services/WebService.Services/WebService.Services.csproj.user
+/MicroFrontend/Clients/Angular18Client/package-lock.json
+/MicroFrontend/Hosts/AngularHost/package-lock.json
+/MicroFrontend/Hosts/MFELibrary/.vscode
+/MicroFrontend/Hosts/MFELibrary/obj/Debug
+/MicroFrontend/Hosts/MFELibrary/package-lock.json
+/MicroFrontend/Hosts/MFELibrary/package-lock.json
+/.gitignore

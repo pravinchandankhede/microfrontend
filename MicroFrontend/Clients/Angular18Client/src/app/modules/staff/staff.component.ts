@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoggerService } from 'mfelibrary';
 
 @Component({
   selector: 'home',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class StaffComponent {
 
+  constructor(logger : LoggerService) {
+
+    logger.log('staff cons');
+  }
 }

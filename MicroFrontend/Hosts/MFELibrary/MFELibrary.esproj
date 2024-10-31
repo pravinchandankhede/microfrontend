@@ -5,15 +5,6 @@
     <!-- Allows the build (or compile) script located on package.json to run on Build -->
     <ShouldRunBuildScript>false</ShouldRunBuildScript>
     <!-- Folder where production build objects will be placed -->
-    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Angular18Client\browser\</BuildOutputFolder>
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\MFELibrary\browser\</BuildOutputFolder>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove=".vscode\**" />
-    <None Remove="dist\**" />
-    <TypeScriptConfiguration Remove=".vscode\**" />
-    <TypeScriptConfiguration Remove="dist\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\app\services\" />
-  </ItemGroup>
 </Project>
