@@ -46,7 +46,8 @@
 						],
 						"main": "src/main.ts",
 						"extraWebpackConfig": "webpack.config.js",
-						"commonChunk": false
+                        "commonChunk": false,
+                        "namedChunks": true
 					},
 					"configurations": {
 						"production": {

@@ -4,6 +4,7 @@ module.exports = withModuleFederationPlugin({
 
     remotes: {
         //  "mfe1": "http://localhost:4201/remoteEntry.js",
+        //"Angular18Client": "http://localhost:4201/remoteEntry.js",
     },
 
     shared: {
@@ -15,7 +16,7 @@ module.exports = withModuleFederationPlugin({
         'mfelibrary': {
             singleton: true,
             strictVersion: true,
-            requiredVersion: '0.0.1',
+            requiredVersion: '0.0.2',
         },
     },
 });

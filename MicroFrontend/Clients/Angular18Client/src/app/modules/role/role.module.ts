@@ -3,9 +3,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { StaffRoutingModule } from "./staff-routing.module";
-import { StaffComponent } from "./staff.component";
-import { SharedModule } from "../shared/shared.module";
+import { RoleRoutingModule } from "./role-routing.module";
+import { RoleComponent } from "./role.component";
 
 @NgModule({
   imports: [
@@ -13,11 +12,12 @@ import { SharedModule } from "../shared/shared.module";
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    StaffRoutingModule,
-    RouterModule,
-    SharedModule
-
+    RoleRoutingModule,
+    RouterModule
+    //SharedModule,
+    //TreeModule,
+    //TreeTableModule
   ],
-  declarations: [StaffComponent]
+  //declarations: [RoleComponent]
 })
-export class StaffModule { }
+export class RoleModule { }

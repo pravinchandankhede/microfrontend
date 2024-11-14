@@ -1,6 +1,6 @@
 {
   "name": "mfelibrary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=127.0.0.1",
@@ -21,7 +21,8 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10",
-    "jest-editor-support": "*"
+    "jest-editor-support": "*",
+    "@angular-architects/module-federation": "^18.0.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.10",

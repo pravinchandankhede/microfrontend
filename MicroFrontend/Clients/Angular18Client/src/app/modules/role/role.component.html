@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <h2>Select Your Role</h2>
+    <form id="roleForm">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="roleAdmin" value="Admin">
+            <label class="form-check-label" for="roleAdmin">Admin</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="roleEditor" value="Editor">
+            <label class="form-check-label" for="roleEditor">Editor</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="roleViewer" value="Viewer">
+            <label class="form-check-label" for="roleViewer">Viewer</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="roleContributor" value="Contributor">
+            <label class="form-check-label" for="roleContributor">Contributor</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="role" id="roleGuest" value="Guest">
+            <label class="form-check-label" for="roleGuest">Guest</label>
+        </div>
+        <div class="mt-3">
+            <button type="button" class="btn btn-primary" onclick="applyRole()">Apply</button>
+            <button type="button" class="btn btn-secondary" onclick="cancelSelection()">Cancel</button>
+        </div>
+    </form>
+    <p class="mt-3">Current Role: <span id="currentRole">None</span></p>
+</div>

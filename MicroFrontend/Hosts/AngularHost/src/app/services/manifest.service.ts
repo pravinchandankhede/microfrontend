@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 })
 export class ManifestService {
     remotes: CustomRemoteConfig[] = [];
-    manifestLoaded: Boolean = false;
+    manifestLoaded: boolean = false;
 
     constructor(private readonly router: Router) {
 

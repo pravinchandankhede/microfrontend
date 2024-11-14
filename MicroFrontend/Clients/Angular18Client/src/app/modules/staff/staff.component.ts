@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { LoggerService } from 'mfelibrary';
+import { NotificationSharedService } from '../shared/notificationshared.service';
 
 @Component({
   selector: 'home',
-  templateUrl: './Staff.component.html'
+  templateUrl: './staff.component.html'
 })
 export class StaffComponent {
 
-  constructor(logger : LoggerService) {
-
-    logger.log('staff cons');
+  constructor(logger : LoggerService, notifyService: NotificationSharedService) {
+      logger.log('staff cons');
+      //notificationService.log('message');
+      notifyService.log('notify');
   }
 }

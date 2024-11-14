@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebService.Services", "Serv
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "MFELibrary", "Hosts\MFELibrary\MFELibrary.esproj", "{D9EDFB9B-DD41-4404-8E8B-857B59FBBEF4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NativeFederation", "NativeFederation", "{EEAB1A4C-C4D2-4DF6-A7BC-6BCEFD2C5F0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

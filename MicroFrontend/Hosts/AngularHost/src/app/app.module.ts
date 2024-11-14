@@ -6,16 +6,18 @@ import { CoreModule } from './core/core.module';
 import { CommonModule } from '@angular/common';
 import { ManifestService } from './services/manifest.service';
 import { LoggerService } from 'mfelibrary';
+import { NotificationSharedService } from './modules/shared/notificationshared.service';
+import { LookupService } from './services/lookup.service';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent        
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         CoreModule,
-        CommonModule
+        CommonModule        
     ],
     providers: [
         {
@@ -25,6 +27,14 @@ import { LoggerService } from 'mfelibrary';
         {
             provide: 'LOGGER_SERVICE',
             useClass: LoggerService
+        },        
+        {
+            provide: 'NotificationSharedService',
+            useClass: NotificationSharedService
+        },
+        {
+            provide: 'LookupService',
+            useClass: LookupService
         }
     ],
     bootstrap: [AppComponent]

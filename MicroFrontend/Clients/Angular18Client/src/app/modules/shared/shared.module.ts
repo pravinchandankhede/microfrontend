@@ -3,9 +3,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
-import { StaffRoutingModule } from "./staff-routing.module";
-import { StaffComponent } from "./staff.component";
-import { SharedModule } from "../shared/shared.module";
+import { NotificationSharedService } from "./notificationshared.service";
 
 @NgModule({
   imports: [
@@ -13,11 +11,11 @@ import { SharedModule } from "../shared/shared.module";
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    StaffRoutingModule,
-    RouterModule,
-    SharedModule
-
+    RouterModule
+    //SharedModule,
+    //TreeModule,
+    //TreeTableModule
   ],
-  declarations: [StaffComponent]
+  providers:[NotificationSharedService]
 })
-export class StaffModule { }
+export class SharedModule { }

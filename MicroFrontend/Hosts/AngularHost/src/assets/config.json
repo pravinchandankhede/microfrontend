@@ -12,5 +12,12 @@
         "displayName": "Staff",
         "routePath": "staff",
         "ngModuleName": "StaffModule"
+    },
+    "mfe3": {
+        "remoteEntry": "http://localhost:4201/remoteEntry.js",
+        "exposedModule": "./RoleModule",
+        "displayName": "Role",
+        "routePath": "role",
+        "ngModuleName": "RoleModule"        
     }
 }

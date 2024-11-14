@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoggerService } from 'mfelibrary';
+import { NotificationSharedService } from './modules/shared/notificationshared.service';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,12 @@ import { LoggerService } from 'mfelibrary';
         {
             provide: 'LOGGER_SERVICE',
             useClass: LoggerService            
-        }],
+        },        
+        {
+            provide: 'NotificationSharedService',
+            useClass: NotificationSharedService
+        }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

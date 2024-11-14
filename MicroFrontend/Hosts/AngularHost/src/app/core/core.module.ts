@@ -8,9 +8,9 @@ import { CoreRoutingModule } from './core-routing.module';
 import { HomeRoutingModule } from '../modules/home/home-routing.module';
 
 @NgModule({
-  imports: [RouterModule, HttpClientModule, FormsModule, ReactiveFormsModule, CommonModule, CoreRoutingModule, HomeRoutingModule],
+    imports: [RouterModule, HttpClientModule, FormsModule, ReactiveFormsModule, CommonModule, CoreRoutingModule, HomeRoutingModule],
   declarations: [
-    ShellComponent    
+      ShellComponent      
   ],
   providers: [DatePipe],
 })

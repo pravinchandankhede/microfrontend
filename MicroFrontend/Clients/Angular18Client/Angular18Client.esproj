@@ -14,6 +14,7 @@
     <TypeScriptConfiguration Remove="dist\**" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\app\models\" />
     <Folder Include="src\app\services\" />
   </ItemGroup>
 </Project>

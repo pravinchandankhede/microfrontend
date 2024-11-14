@@ -20,9 +20,30 @@
                 <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><a class="dropdown-item" href="#">Account</a></li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
+                <!-- In your main component HTML -->
+                <li><a class="dropdown-item" (click)="openFlyout('role')">Account</a></li>
             </ul>
+            <div *ngIf="showFlyout" class="flyout-window">
+                <div class="card">
+                    <div class="card-header">
+                        Flyout Window
+                        <button type="button" class="btn-close" aria-label="Close" (click)="closeFlyout()"></button>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputText" class="form-label">Input Text</label>
+                                <input type="text" class="form-control" name="inputText" id="inputText" [(ngModel)]="inputText">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div #roleContainer class="card-body"></div>
+                </div>                
+            </div>            
         </div>
     </header>
+    
     <!-- Main Container for Child App -->
     <div class="container my-5 flex-grow-1">
         <div class="row">
