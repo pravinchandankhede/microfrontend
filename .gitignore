@@ -26,3 +26,11 @@
 /MicroFrontend/ModuleFederation/Libraries/MFELibrary/obj/Debug/package.g.props
 /MicroFrontend/ModuleFederation/Clients/Angular18Client/.vscode
 /MicroFrontend/ModuleFederation/Clients/Angular18Client/obj/Debug
+/src/.vs
+/src/ModuleFederation/Clients/Angular18Client/.vscode
+/src/ModuleFederation/Clients/Angular18Client/obj/Debug
+/src/ModuleFederation/Hosts/AngularHost/.vscode
+/src/ModuleFederation/Hosts/AngularHost/obj/Debug
+/src/ModuleFederation/Libraries/MFELibrary/.vscode
+/src/ModuleFederation/Libraries/MFELibrary/obj/Debug
+/src/Services/WebService.Services/obj
