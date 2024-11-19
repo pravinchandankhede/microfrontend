@@ -19,3 +19,10 @@
 /MicroFrontend/Hosts/MFELibrary/package-lock.json
 /MicroFrontend/Hosts/MFELibrary/package-lock.json
 /.gitignore
+/MicroFrontend/ModuleFederation/Hosts/AngularHost/.vscode
+/MicroFrontend/ModuleFederation/Hosts/AngularHost/obj/Debug
+/MicroFrontend/ModuleFederation/Libraries/MFELibrary/.vscode
+/MicroFrontend/ModuleFederation/Libraries/MFELibrary/obj/Debug
+/MicroFrontend/ModuleFederation/Libraries/MFELibrary/obj/Debug/package.g.props
+/MicroFrontend/ModuleFederation/Clients/Angular18Client/.vscode
+/MicroFrontend/ModuleFederation/Clients/Angular18Client/obj/Debug
