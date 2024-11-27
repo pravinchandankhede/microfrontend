@@ -34,3 +34,12 @@
 /src/ModuleFederation/Libraries/MFELibrary/.vscode
 /src/ModuleFederation/Libraries/MFELibrary/obj/Debug
 /src/Services/WebService.Services/obj
+/src/NativeFederation/Libraries/MFELibrary/.vscode
+/src/NativeFederation/Clients/Angular18Client/.vscode
+/src/NativeFederation/Clients/Angular18Client/obj/Debug
+/src/NativeFederation/Hosts/AngularHost/obj/Debug
+/src/NativeFederation/Libraries/MFELibrary/obj/Debug
+/src/NativeFederation/Clients/Angular18Client/package-lock.json
+/src/NativeFederation/Hosts/AngularHost/.vscode
+/src/NativeFederation/Hosts/AngularHost/package-lock.json
+/src/NativeFederation/Libraries/MFELibrary/package-lock.json

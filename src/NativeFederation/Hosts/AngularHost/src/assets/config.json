@@ -1,0 +1,26 @@
+[
+    {
+        "name": "mfe1",
+        "remoteEntry": "http://localhost:4201/remoteEntry.json",
+        "exposedModule": "./Module",
+        "displayName": "Team",
+        "routePath": "team",
+        "ngModuleName": "TeamModule"
+    },
+    {
+        "name": "mfe1",
+        "remoteEntry": "http://localhost:4201/remoteEntry.json",
+        "exposedModule": "./StaffModule",
+        "displayName": "Staff",
+        "routePath": "staff",
+        "ngModuleName": "StaffModule"
+    },
+    {
+        "name": "mfe1",
+        "remoteEntry": "http://localhost:4201/remoteEntry.json",
+        "exposedModule": "./RoleModule",
+        "displayName": "Role",
+        "routePath": "role",
+        "ngModuleName": "RoleModule"
+    }
+]

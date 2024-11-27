@@ -1,0 +1,62 @@
+<div class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="bg-primary text-white d-flex justify-content-between align-items-center py-3 px-4">
+        <div class="d-flex align-items-center">
+            <img src="assets/images/logo.png" alt="Brand" class="me-2" style="height: 40px;">
+            <h3 class="mb-0">App Name</h3>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+                <a [routerLink]="['/app/home']" class="text-white mx-2">Home</a>
+                <span *ngFor="let remote of remotes">
+                    <a [routerLink]="remote.routePath" class="text-white mx-2">{{remote.displayName}}</a>
+                </span>
+                <a href="#" class="text-white mx-2">Contact</a>
+                <a [routerLink]="['/app/config']" class="text-white mx-2">Config</a>
+            </div>
+        </div>
+        <div class="ms-3 dropdown">
+            <a href="#" class="text-white dropdown-toggle" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+                <!-- In your main component HTML -->
+                <li><a class="dropdown-item" (click)="openFlyout('role')">Account</a></li>
+            </ul>
+            <div *ngIf="showFlyout" class="flyout-window">
+                <div class="card">
+                    <div class="card-header">
+                        Flyout Window
+                        <button type="button" class="btn-close" aria-label="Close" (click)="closeFlyout()"></button>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputText" class="form-label">Input Text</label>
+                                <input type="text" class="form-control" name="inputText" id="inputText" [(ngModel)]="inputText">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div #roleContainer class="card-body"></div>
+                </div>                
+            </div>            
+        </div>
+    </header>
+    
+    <!-- Main Container for Child App -->
+    <div class="container my-5 flex-grow-1">
+        <div class="row">
+            <div class="col">
+                <div id="child-app-container">
+                    <!-- Child app will be loaded here -->
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-1 mt-auto">
+        <p>Footer Section</p>
+    </footer>
+</div>
