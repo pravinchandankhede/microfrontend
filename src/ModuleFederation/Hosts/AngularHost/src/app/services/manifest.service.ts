@@ -25,11 +25,12 @@ export class ManifestService {
     public async configureRoutes(): Promise<CustomRemoteConfig[]> {
         if (!this.manifestLoaded) {
             await this.loadManifestConfig();
-        }
-        const manifest = getManifest<CustomManifest>();
-        const routes = buildRoutes(manifest);
-        this.router.resetConfig(routes);
-        this.remotes = Object.values(manifest);
+
+            const manifest = getManifest<CustomManifest>();
+            const routes = buildRoutes(manifest);
+            this.router.resetConfig(routes);
+            this.remotes = Object.values(manifest);
+        }        
 
         return this.remotes;
     }

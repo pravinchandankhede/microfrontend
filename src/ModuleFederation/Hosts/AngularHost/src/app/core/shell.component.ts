@@ -1,15 +1,17 @@
-import { Component, Input, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { CustomRemoteConfig } from '../models/config';
 import { ManifestService } from '../services/manifest.service';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from '../models/plugin.model';
 import { LookupService } from '../services/lookup.service';
+import { EventBus, LoggerService, ThemeChangedEventData } from 'mfelibrary';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'shell',
     templateUrl: './shell.component.html'
 })
-export class ShellComponent {
+export class ShellComponent implements OnInit, OnDestroy {
     remotes: CustomRemoteConfig[] = [];
     showFlyout = false;
     inputText = '';
@@ -19,38 +21,47 @@ export class ShellComponent {
     @ViewChild('roleContainer', { read: ViewContainerRef, static: false }) roleContainer!: ViewContainerRef;
 
     constructor(
-        private readonly manifestService: ManifestService,        
-        private readonly lookupService: LookupService) {
+        private readonly manifestService: ManifestService,
+        private readonly lookupService: LookupService,
+        private readonly eventBus: EventBus,
+        private readonly loggerService: LoggerService) {
+        loggerService.log("shell cons");
+
+        this.themeChangedSubscription = this.eventBus.on<ThemeChangedEventData>('ThemeChangedEvent').subscribe((event: ThemeChangedEventData) => {
+            loggerService.log(event.themeName); // Outputs the theme name
+        });
     }
+
+    themeChangedSubscription: Subscription;
 
     async ngOnInit(): Promise<void> {
         this.remotes = await this.manifestService.configureRoutes();
         if (this.lookupService) {
-            this.plugins = await this.lookupService.lookup();            
+            this.plugins = await this.lookupService.lookup();
         }
         else {
-            console.log("lookup service is null");
+            this.loggerService.log("lookup service is null");
         }
 
         this.options = this.plugins[0];
-    }    
+    }
 
     async openFlyout(option: string) {
-        console.log(`Selected option: ${option}`);
+        this.loggerService.log(`Selected option: ${option}`);
         this.showFlyout = true;
 
         try {
             const Component = await loadRemoteModule(this.options)
                 .then(m => m[this.options.componentName])
                 .catch(err => {
-                    console.error('Failed to load component from module', err);
+                    this.loggerService.log('Failed to load component from module' + err);
                     return null;
                 });
 
             this.roleContainer.createComponent(Component);
 
         } catch (err) {
-            console.error('Failed to load module', err);
+            this.loggerService.log('Failed to load module' + err);
         }
     }
 
@@ -58,4 +69,7 @@ export class ShellComponent {
         this.showFlyout = false;
     }
 
+    async ngOnDestroy() {
+        this.themeChangedSubscription.unsubscribe();
+    }
 }
