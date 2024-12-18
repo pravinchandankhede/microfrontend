@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnDestroy, ViewChild, ViewContainerRef } from '@angular/core';
 import { CustomRemoteConfig } from '../models/config';
 import { ManifestService } from '../services/manifest.service';
 import { loadRemoteModule } from '@angular-architects/module-federation';
@@ -11,12 +11,13 @@ import { Subscription } from 'rxjs';
     selector: 'shell',
     templateUrl: './shell.component.html'
 })
-export class ShellComponent implements OnInit, OnDestroy {
+export class ShellComponent implements OnDestroy {
     remotes: CustomRemoteConfig[] = [];
     showFlyout = false;
     inputText = '';
     options!: PluginOptions;
     plugins: PluginOptions[] = [];
+    themeChangedSubscription: Subscription;
 
     @ViewChild('roleContainer', { read: ViewContainerRef, static: false }) roleContainer!: ViewContainerRef;
 
@@ -30,16 +31,15 @@ export class ShellComponent implements OnInit, OnDestroy {
         this.themeChangedSubscription = this.eventBus.on<ThemeChangedEventData>('ThemeChangedEvent').subscribe((event: ThemeChangedEventData) => {
             loggerService.log(event.themeName); // Outputs the theme name
         });
+
+        this.initialize();
     }
-
-    themeChangedSubscription: Subscription;
-
-    async ngOnInit(): Promise<void> {
+    
+    private async initialize() {
         this.remotes = await this.manifestService.configureRoutes();
         if (this.lookupService) {
             this.plugins = await this.lookupService.lookup();
-        }
-        else {
+        } else {
             this.loggerService.log("lookup service is null");
         }
 
