@@ -5,5 +5,7 @@
 .vs
 .vscode
 obj
-WebService.Services.csproj.user
+csproj.user
 package-lock.json
+[bB]in
+/src/Services/WebService.Services/WebService.Services.csproj.user

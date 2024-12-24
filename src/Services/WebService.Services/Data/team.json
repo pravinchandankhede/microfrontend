@@ -1,0 +1,272 @@
+﻿[
+    {
+        "EmployeeId": 1,
+        "Email": "john.doe1@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-1234",
+        "City": "New York",
+        "State": "NY"
+    },
+    {
+        "EmployeeId": 2,
+        "Email": "jane.smith2@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-5678",
+        "City": "Los Angeles",
+        "State": "CA"
+    },
+    {
+        "EmployeeId": 3,
+        "Email": "michael.johnson3@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-8765",
+        "City": "Chicago",
+        "State": "IL"
+    },
+    {
+        "EmployeeId": 4,
+        "Email": "emily.davis4@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-4321",
+        "City": "Houston",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 5,
+        "Email": "david.wilson5@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-6789",
+        "City": "Phoenix",
+        "State": "AZ"
+    },
+    {
+        "EmployeeId": 6,
+        "Email": "sarah.martinez6@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-9876",
+        "City": "Philadelphia",
+        "State": "PA"
+    },
+    {
+        "EmployeeId": 7,
+        "Email": "chris.brown7@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-3456",
+        "City": "San Antonio",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 8,
+        "Email": "amanda.jones8@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-6543",
+        "City": "San Diego",
+        "State": "CA"
+    },
+    {
+        "EmployeeId": 9,
+        "Email": "joshua.garcia9@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-7890",
+        "City": "Dallas",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 10,
+        "Email": "megan.miller10@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-0987",
+        "City": "San Jose",
+        "State": "CA"
+    },
+    {
+        "EmployeeId": 11,
+        "Email": "daniel.moore11@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-2345",
+        "City": "Austin",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 12,
+        "Email": "laura.taylor12@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-5432",
+        "City": "Jacksonville",
+        "State": "FL"
+    },
+    {
+        "EmployeeId": 13,
+        "Email": "james.anderson13@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-6780",
+        "City": "Fort Worth",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 14,
+        "Email": "ashley.thomas14@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-8760",
+        "City": "Columbus",
+        "State": "OH"
+    },
+    {
+        "EmployeeId": 15,
+        "Email": "matthew.jackson15@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-3450",
+        "City": "Charlotte",
+        "State": "NC"
+    },
+    {
+        "EmployeeId": 16,
+        "Email": "nicole.white16@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-6540",
+        "City": "San Francisco",
+        "State": "CA"
+    },
+    {
+        "EmployeeId": 17,
+        "Email": "andrew.harris17@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-7891",
+        "City": "Indianapolis",
+        "State": "IN"
+    },
+    {
+        "EmployeeId": 18,
+        "Email": "karen.martin18@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-0981",
+        "City": "Seattle",
+        "State": "WA"
+    },
+    {
+        "EmployeeId": 19,
+        "Email": "brian.lee19@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-2341",
+        "City": "Denver",
+        "State": "CO"
+    },
+    {
+        "EmployeeId": 20,
+        "Email": "lisa.walker20@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-5431",
+        "City": "Washington",
+        "State": "DC"
+    },
+    {
+        "EmployeeId": 21,
+        "Email": "kevin.hall21@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-6782",
+        "City": "Boston",
+        "State": "MA"
+    },
+    {
+        "EmployeeId": 22,
+        "Email": "michelle.allen22@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-8762",
+        "City": "El Paso",
+        "State": "TX"
+    },
+    {
+        "EmployeeId": 23,
+        "Email": "steven.young23@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-3452",
+        "City": "Nashville",
+        "State": "TN"
+    },
+    {
+        "EmployeeId": 24,
+        "Email": "susan.king24@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-6542",
+        "City": "Detroit",
+        "State": "MI"
+    },
+    {
+        "EmployeeId": 25,
+        "Email": "jason.wright25@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-7893",
+        "City": "Memphis",
+        "State": "TN"
+    },
+    {
+        "EmployeeId": 26,
+        "Email": "kimberly.lopez26@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-0983",
+        "City": "Louisville",
+        "State": "KY"
+    },
+    {
+        "EmployeeId": 27,
+        "Email": "ryan.hill27@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-2343",
+        "City": "Baltimore",
+        "State": "MD"
+    },
+    {
+        "EmployeeId": 28,
+        "Email": "angela.scott28@example.com",
+        "TeamName": "Development",
+        "Designation": "Software Engineer",
+        "PhoneNumber": "555-5433",
+        "City": "Milwaukee",
+        "State": "WI"
+    },
+    {
+        "EmployeeId": 29,
+        "Email": "eric.green29@example.com",
+        "TeamName": "Development",
+        "Designation": "Senior Software Engineer",
+        "PhoneNumber": "555-6784",
+        "City": "Albuquerque",
+        "State": "NM"
+    },
+    {
+        "EmployeeId": 30,
+        "Email": "laura.adams30@example.com",
+        "TeamName": "Development",
+        "Designation": "Lead Developer",
+        "PhoneNumber": "555-8764",
+        "City": "Tucson",
+        "State": "AZ"
+    }
+]

@@ -15,6 +15,10 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "MFELibrary", "Libraries\MFE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A82370BE-9A09-4CD2-BDB5-81427D7F9CAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{64D7C8FF-2A95-45AA-9395-B816AFCDB88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Services", "..\Services\WebService.Services\WebService.Services.csproj", "{49B40B3D-2EE2-48AC-9112-0631BAA383C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{49B40B3D-2EE2-48AC-9112-0631BAA383C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B40B3D-2EE2-48AC-9112-0631BAA383C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B40B3D-2EE2-48AC-9112-0631BAA383C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B40B3D-2EE2-48AC-9112-0631BAA383C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +55,6 @@ Global
 		{8799D06A-E67B-4D80-86B6-24D45514C918} = {1F6A5BC6-5E10-451F-91F2-810E31BE855D}
 		{F5A2573B-15E3-47D9-83CE-22308CE40FA7} = {7F5D0552-0342-41B3-BA2E-D69114E97747}
 		{B2D796B4-6685-488D-90BA-55500204B6CD} = {A82370BE-9A09-4CD2-BDB5-81427D7F9CAF}
+		{49B40B3D-2EE2-48AC-9112-0631BAA383C9} = {64D7C8FF-2A95-45AA-9395-B816AFCDB88C}
 	EndGlobalSection
 EndGlobal

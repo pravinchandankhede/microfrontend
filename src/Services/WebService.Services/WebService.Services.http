@@ -1,6 +1,6 @@
 @WebService.Services_HostAddress = http://localhost:5132
 
-GET {{WebService.Services_HostAddress}}/weatherforecast/
+GET {{WebService.Services_HostAddress}}/team/
 Accept: application/json
 
 ###
