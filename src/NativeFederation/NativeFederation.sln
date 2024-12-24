@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular18Client", "Clients\Angular18Client\Angular18Client.esproj", "{8799D06A-E67B-4D80-86B6-24D45514C918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{1F6A5BC6-5E10-451F-91F2-810E31BE855D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AngularHost", "Hosts\AngularHost\AngularHost.esproj", "{F5A2573B-15E3-47D9-83CE-22308CE40FA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{7F5D0552-0342-41B3-BA2E-D69114E97747}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "MFELibrary", "Libraries\MFELibrary\MFELibrary.esproj", "{B2D796B4-6685-488D-90BA-55500204B6CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A82370BE-9A09-4CD2-BDB5-81427D7F9CAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8799D06A-E67B-4D80-86B6-24D45514C918}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D796B4-6685-488D-90BA-55500204B6CD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8799D06A-E67B-4D80-86B6-24D45514C918} = {1F6A5BC6-5E10-451F-91F2-810E31BE855D}
+		{F5A2573B-15E3-47D9-83CE-22308CE40FA7} = {7F5D0552-0342-41B3-BA2E-D69114E97747}
+		{B2D796B4-6685-488D-90BA-55500204B6CD} = {A82370BE-9A09-4CD2-BDB5-81427D7F9CAF}
+	EndGlobalSection
+EndGlobal
