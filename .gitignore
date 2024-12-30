@@ -9,3 +9,4 @@ csproj.user
 package-lock.json
 [bB]in
 /src/Services/WebService.Services/WebService.Services.csproj.user
+/src/ModuleFederation/Hosts/AngularHost/package-lock.json

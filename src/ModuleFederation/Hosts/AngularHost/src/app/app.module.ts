@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { CommonModule } from '@angular/common';
 import { ManifestService } from './services/manifest.service';
-import { LoggerService } from 'mfelibrary';
+import { AuthorizationInterceptor, LoggerService, SessionService } from 'mfelibrary';
 import { NotificationSharedService } from './modules/shared/notificationshared.service';
 import { LookupService } from './services/lookup.service';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,17 @@ import { LookupService } from './services/lookup.service';
         {
             provide: 'LookupService',
             useClass: LookupService
-        }
+        },
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthorizationInterceptor,
+            multi: true
+        },
+        {
+            provide: 'SessionService',
+            useClass: SessionService
+        },
+        provideHttpClient(withInterceptorsFromDi())
     ],
     bootstrap: [AppComponent]
 })
