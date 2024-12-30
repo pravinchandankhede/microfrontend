@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { EventBus, ThemeChangedEvent, ThemeChangedEventData } from 'mfelibrary';
+import { EventBus, LoggerService, ThemeChangedEvent, ThemeChangedEventData } from 'mfelibrary';
 import { HideMenuEvent, HideMenuEventData } from '../../models/custom.events';
+import { TeamsService } from '../../services/teams.service';
+import { HttpErrorResponse } from '@angular/common/http';
+import { Team } from '../../models/team';
 
 @Component({
   selector: 'home',
@@ -8,7 +11,12 @@ import { HideMenuEvent, HideMenuEventData } from '../../models/custom.events';
 })
 export class TeamComponent implements OnInit {
 
-    constructor(private eventBus: EventBus) {
+    teams!: Array<Team>;
+
+    constructor(
+        private eventBus: EventBus,
+        protected readonly teamsService: TeamsService,
+        protected readonly loggerService: LoggerService) {
 
     }
 
@@ -18,7 +26,21 @@ export class TeamComponent implements OnInit {
         this.eventBus.emit(new HideMenuEvent(new HideMenuEventData()));
 
         this.eventBus.on<HideMenuEventData>('HideMenuEvent').subscribe((event: HideMenuEventData) => {
-            console.log(event.hide); // Outputs the theme name
+            console.log('HideEventMenu callback ' + event.hide); // Outputs the theme name
         });
+
+        this.teamsService.getTeams()
+            .subscribe((teams: Array<Team>): void => {
+                this.teams = teams;
+            }, (error: HttpErrorResponse): void => {
+                this.loggerService.log(error.message);
+            });            
+
+        //this.accountService.getAccounts().subscribe((accounts: Array<Account>): void => {
+        //    this.modifiedByAccounts = accounts;
+        //    // On error, handle the error
+        //}, (error: HttpErrorResponse): void => {
+        //    CoreNotificationService.handleError(error);
+        //});
     }
 }

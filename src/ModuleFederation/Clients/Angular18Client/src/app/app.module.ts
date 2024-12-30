@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoggerService } from 'mfelibrary';
+import { AuthorizationInterceptor, LoggerService, SessionService } from 'mfelibrary';
 import { NotificationSharedService } from './modules/shared/notificationshared.service';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,18 @@ import { NotificationSharedService } from './modules/shared/notificationshared.s
         {
             provide: 'NotificationSharedService',
             useClass: NotificationSharedService
-        }
+        },
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthorizationInterceptor,
+            multi: true
+        },
+        {
+            provide: 'SessionService',
+            useClass: SessionService
+        },
+        provideHttpClient(withInterceptorsFromDi())
+
     ],
     bootstrap: [AppComponent]
 })

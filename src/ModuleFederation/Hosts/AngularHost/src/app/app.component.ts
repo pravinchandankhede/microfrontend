@@ -13,8 +13,7 @@ export class AppComponent {
     remotes: CustomRemoteConfig[] = [];
 
     constructor(
-        private readonly manifestService: ManifestService
-        ) {
+        private readonly manifestService: ManifestService) {
 
     }
     async ngOnInit(): Promise<void> {
