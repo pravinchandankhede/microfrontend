@@ -1,0 +1,17 @@
+[
+	{
+		"FeatureId": 1,
+		"Name": "Team",
+		"ModuleName": "Team"
+	},
+	{
+		"FeatureId": 2,
+		"Name": "Staff",
+		"ModuleName": "Staff"
+	},
+	{
+		"FeatureId": 3,
+		"Name": "Config",
+		"ModuleName": "Config"
+	}
+]

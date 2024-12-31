@@ -1,0 +1,17 @@
+[
+	{
+		"RoleId": 1,
+		"Name": "System Admin",
+		"Features": [
+			{
+				"FeatureId": 1
+			},
+			{
+				"FeatureId": 2
+			},
+			{
+				"FeatureId": 3
+			}
+		]
+	}
+]
