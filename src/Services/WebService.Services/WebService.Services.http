@@ -2,5 +2,6 @@
 
 GET {{WebService.Services_HostAddress}}/team/
 Accept: application/json
-
+GET {{WebService.Services_HostAddress}}/staff/
+Accept: application/json
 ###

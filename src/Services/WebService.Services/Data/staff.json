@@ -1,0 +1,272 @@
+﻿[
+	{
+		"StaffId": 1,
+		"Name": "John Doe",
+		"Designation": "Software Engineer",
+		"Company": "TechCorp",
+		"Contact": "+1 123-456-7890",
+		"Email": "john.doe@example.com",
+		"Country": "USA"
+	},
+	{
+		"StaffId": 2,
+		"Name": "Jane Smith",
+		"Designation": "Project Manager",
+		"Company": "Innovatech",
+		"Contact": "+44 20 7946 0958",
+		"Email": "jane.smith@example.co.uk",
+		"Country": "UK"
+	},
+	{
+		"StaffId": 3,
+		"Name": "Michael Johnson",
+		"Designation": "Data Analyst",
+		"Company": "DataWorks",
+		"Contact": "+61 2 1234 5678",
+		"Email": "michael.johnson@example.com.au",
+		"Country": "Australia"
+	},
+	{
+		"StaffId": 4,
+		"Name": "Emily Davis",
+		"Designation": "UX Designer",
+		"Company": "DesignHub",
+		"Contact": "+49 30 123456",
+		"Email": "emily.davis@example.de",
+		"Country": "Germany"
+	},
+	{
+		"StaffId": 5,
+		"Name": "David Wilson",
+		"Designation": "Marketing Specialist",
+		"Company": "MarketGurus",
+		"Contact": "+33 1 23456789",
+		"Email": "david.wilson@example.fr",
+		"Country": "France"
+	},
+	{
+		"StaffId": 6,
+		"Name": "Sarah Brown",
+		"Designation": "HR Manager",
+		"Company": "PeopleFirst",
+		"Contact": "+91 98765 43210",
+		"Email": "sarah.brown@example.in",
+		"Country": "India"
+	},
+	{
+		"StaffId": 7,
+		"Name": "James Taylor",
+		"Designation": "DevOps Engineer",
+		"Company": "CloudNet",
+		"Contact": "+81 3-1234-5678",
+		"Email": "james.taylor@example.jp",
+		"Country": "Japan"
+	},
+	{
+		"StaffId": 8,
+		"Name": "Patricia Miller",
+		"Designation": "Product Manager",
+		"Company": "ProdTech",
+		"Contact": "+55 11 1234-5678",
+		"Email": "patricia.miller@example.br",
+		"Country": "Brazil"
+	},
+	{
+		"StaffId": 9,
+		"Name": "Robert Anderson",
+		"Designation": "QA Engineer",
+		"Company": "QualityWorks",
+		"Contact": "+27 21 123 4567",
+		"Email": "robert.anderson@example.za",
+		"Country": "South Africa"
+	},
+	{
+		"StaffId": 10,
+		"Name": "Linda Martinez",
+		"Designation": "Business Analyst",
+		"Company": "BizSolutions",
+		"Contact": "+34 91 123 4567",
+		"Email": "linda.martinez@example.es",
+		"Country": "Spain"
+	},
+	{
+		"StaffId": 11,
+		"Name": "William Lee",
+		"Designation": "Network Engineer",
+		"Company": "NetSecure",
+		"Contact": "+82 2-1234-5678",
+		"Email": "william.lee@example.kr",
+		"Country": "South Korea"
+	},
+	{
+		"StaffId": 12,
+		"Name": "Maria Garcia",
+		"Designation": "Content Writer",
+		"Company": "WriteNow",
+		"Contact": "+39 06 123 4567",
+		"Email": "maria.garcia@example.it",
+		"Country": "Italy"
+	},
+	{
+		"StaffId": 13,
+		"Name": "Daniel Harris",
+		"Designation": "System Administrator",
+		"Company": "SysAdmin Inc.",
+		"Contact": "+1 987-654-3210",
+		"Email": "daniel.harris@example.com",
+		"Country": "USA"
+	},
+	{
+		"StaffId": 14,
+		"Name": "Laura Clark",
+		"Designation": "Graphic Designer",
+		"Company": "CreativeWorks",
+		"Contact": "+44 20 1234 5678",
+		"Email": "laura.clark@example.co.uk",
+		"Country": "UK"
+	},
+	{
+		"StaffId": 15,
+		"Name": "Kevin Lewis",
+		"Designation": "Database Administrator",
+		"Company": "DataSecure",
+		"Contact": "+61 3 9876 5432",
+		"Email": "kevin.lewis@example.com.au",
+		"Country": "Australia"
+	},
+	{
+		"StaffId": 16,
+		"Name": "Sophia Walker",
+		"Designation": "SEO Specialist",
+		"Company": "SearchMax",
+		"Contact": "+49 40 123456",
+		"Email": "sophia.walker@example.de",
+		"Country": "Germany"
+	},
+	{
+		"StaffId": 17,
+		"Name": "Brian Hall",
+		"Designation": "IT Support",
+		"Company": "TechSupport",
+		"Contact": "+33 1 98765432",
+		"Email": "brian.hall@example.fr",
+		"Country": "France"
+	},
+	{
+		"StaffId": 18,
+		"Name": "Olivia Young",
+		"Designation": "Social Media Manager",
+		"Company": "SocialBuzz",
+		"Contact": "+91 87654 32109",
+		"Email": "olivia.young@example.in",
+		"Country": "India"
+	},
+	{
+		"StaffId": 19,
+		"Name": "Ethan King",
+		"Designation": "Cloud Architect",
+		"Company": "CloudSolutions",
+		"Contact": "+81 3-8765-4321",
+		"Email": "ethan.king@example.jp",
+		"Country": "Japan"
+	},
+	{
+		"StaffId": 20,
+		"Name": "Isabella Scott",
+		"Designation": "Product Owner",
+		"Company": "ProductMasters",
+		"Contact": "+55 21 9876-5432",
+		"Email": "isabella.scott@example.br",
+		"Country": "Brazil"
+	},
+	{
+		"StaffId": 21,
+		"Name": "Alexander Green",
+		"Designation": "Security Analyst",
+		"Company": "SecureNet",
+		"Contact": "+27 11 987 6543",
+		"Email": "alexander.green@example.za",
+		"Country": "South Africa"
+	},
+	{
+		"StaffId": 22,
+		"Name": "Mia Adams",
+		"Designation": "Financial Analyst",
+		"Company": "FinanceCorp",
+		"Contact": "+34 91 987 6543",
+		"Email": "mia.adams@example.es",
+		"Country": "Spain"
+	},
+	{
+		"StaffId": 23,
+		"Name": "Benjamin Nelson",
+		"Designation": "Web Developer",
+		"Company": "WebWorks",
+		"Contact": "+82 2-9876-5432",
+		"Email": "benjamin.nelson@example.kr",
+		"Country": "South Korea"
+	},
+	{
+		"StaffId": 24,
+		"Name": "Charlotte Baker",
+		"Designation": "Technical Writer",
+		"Company": "TechDocs",
+		"Contact": "+39 06 987 6543",
+		"Email": "charlotte.baker@example.it",
+		"Country": "Italy"
+	},
+	{
+		"StaffId": 25,
+		"Name": "Henry Carter",
+		"Designation": "Operations Manager",
+		"Company": "OpsManage",
+		"Contact": "+1 234-567-8901",
+		"Email": "henry.carter@example.com",
+		"Country": "USA"
+	},
+	{
+		"StaffId": 26,
+		"Name": "Amelia Mitchell",
+		"Designation": "Customer Support",
+		"Company": "SupportHub",
+		"Contact": "+44 20 8765 4321",
+		"Email": "amelia.mitchell@example.co.uk",
+		"Country": "UK"
+	},
+	{
+		"StaffId": 27,
+		"Name": "Jack Roberts",
+		"Designation": "Mobile Developer",
+		"Company": "MobileApps",
+		"Contact": "+61 2 8765 4321",
+		"Email": "jack.roberts@example.com.au",
+		"Country": "Australia"
+	},
+	{
+		"StaffId": 28,
+		"Name": "Ella Turner",
+		"Designation": "Digital Marketer",
+		"Company": "DigitalWave",
+		"Contact": "+49 30 987654",
+		"Email": "ella.turner@example.de",
+		"Country": "Germany"
+	},
+	{
+		"StaffId": 29,
+		"Name": "Lucas Phillips",
+		"Designation": "Business Development",
+		"Company": "BizDev",
+		"Contact": "+33 1 87654321",
+		"Email": "lucas.phillips@example.fr",
+		"Country": "France"
+	},
+	{
+		"StaffId": 30,
+		"Name": "Grace Campbell",
+		"Designation": "Content Strategist",
+		"Company": "ContentCreators",
+		"Contact": "+91 76543 21098",
+		"Email": "grace.campbell@example.in",
+		"Country": "India"
+	}
+]
