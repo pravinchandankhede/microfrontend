@@ -1,6 +1,6 @@
 {
   "name": "mfelibrary",
-  "version": "0.0.5-alpha4",
+  "version": "0.0.5-alpha5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=127.0.0.1",
