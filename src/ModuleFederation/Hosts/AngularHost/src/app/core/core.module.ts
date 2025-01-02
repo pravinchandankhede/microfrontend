@@ -6,6 +6,7 @@ import { ShellComponent } from './shell.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { HomeRoutingModule } from '../modules/home/home-routing.module';
 import { ConfigRoutingModule } from '../modules/config/config-routing.module';
+import { ErrorComponent } from './error.component';
 
 @NgModule({
     imports: [RouterModule,
@@ -16,7 +17,8 @@ import { ConfigRoutingModule } from '../modules/config/config-routing.module';
         HomeRoutingModule,
         ConfigRoutingModule],
   declarations: [
-      ShellComponent      
+      ShellComponent,
+      ErrorComponent
   ],
   providers: [DatePipe],
 })

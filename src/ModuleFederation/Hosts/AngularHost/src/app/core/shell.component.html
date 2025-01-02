@@ -43,11 +43,11 @@
             </div>            
         </div>
     </header>
-    
+    <app-error [errorMessage]="error"></app-error>
     <!-- Main Container for Child App -->
-    <div class="container my-5 flex-grow-1">
+    <div class="container my-5 flex-grow-1">        
         <div class="row">
-            <div class="col">
+            <div class="col">                
                 <div id="child-app-container">
                     <!-- Child app will be loaded here -->
                     <router-outlet></router-outlet>

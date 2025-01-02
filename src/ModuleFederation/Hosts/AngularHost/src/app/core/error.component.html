@@ -1,0 +1,19 @@
+<!-- error.component.html -->
+<!--<div *ngIf="errorMessage" class="error-container">
+    <p class="error-message">{{ errorMessage }}</p>
+    <span class="close-icon" (click)="closeError()">&#x2715;</span>
+</div>-->
+
+<div class="error-container">
+    <div class="error-header">
+        <span class="pin-icon" (click)="togglePin()">📌</span>
+        <!--<span class="close-icon" (click)="closeError()">&#x2715;</span>-->
+    </div>
+    <div *ngIf="isExpanded" class="error-body">
+        <!--<p class="error-message">{{ errorMessage }}</p>-->
+        <!--<div *ngIf="errorMessage" class="error-container">-->
+            <span class="error-message">{{ errorMessage }}</span>
+            <span class="close-icon" (click)="closeError()">&#x2715;</span>
+        <!--</div>-->
+    </div>
+</div>

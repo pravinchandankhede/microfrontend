@@ -1,11 +1,18 @@
 import { BaseEvent, IBaseEventData } from "./event-models";
 
 export class ErrorEventData extends IBaseEventData {
+
+    constructor(errorTitle: string, errorMessage: string) {
+        super();
+        this.errorTitle = errorTitle;
+        this.errorMessage = errorMessage;
+    }
+
     errorTitle: string = "Error Occurred";
-    errorMessage: string = "error occurred";
+    errorMessage: string = "Error Occurred";
 }
 
-export class ThemeChangedEvent extends BaseEvent {
+export class ErrorEvent extends BaseEvent {
     constructor(errorEventData: ErrorEventData) {
         super("ErrorEvent", errorEventData);
     }

@@ -4,7 +4,7 @@ import { ManifestService } from '../services/manifest.service';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from '../models/plugin.model';
 import { LookupService } from '../services/lookup.service';
-import { EventBus, LoggerService, ThemeChangedEventData } from 'mfelibrary';
+import { ErrorEventData, EventBus, LoggerService, ThemeChangedEventData } from 'mfelibrary';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -18,6 +18,8 @@ export class ShellComponent implements OnDestroy {
     options!: PluginOptions;
     plugins: PluginOptions[] = [];
     themeChangedSubscription: Subscription;
+    error: string = '';
+    errorSubscription: Subscription;
 
     @ViewChild('roleContainer', { read: ViewContainerRef, static: false }) roleContainer!: ViewContainerRef;
 
@@ -31,6 +33,10 @@ export class ShellComponent implements OnDestroy {
         this.themeChangedSubscription = this.eventBus.on<ThemeChangedEventData>('ThemeChangedEvent').subscribe((event: ThemeChangedEventData) => {
             loggerService.log(event.themeName); // Outputs the theme name
         });
+
+        this.errorSubscription = this.eventBus.on<ErrorEventData>('ErrorEvent').subscribe((event: ErrorEventData) => {
+            this.error = event.errorMessage;
+        })
 
         this.initialize();
     }
