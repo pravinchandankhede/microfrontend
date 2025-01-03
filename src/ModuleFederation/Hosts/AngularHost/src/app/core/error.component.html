@@ -1,19 +1,11 @@
-<!-- error.component.html -->
-<!--<div *ngIf="errorMessage" class="error-container">
-    <p class="error-message">{{ errorMessage }}</p>
-    <span class="close-icon" (click)="closeError()">&#x2715;</span>
-</div>-->
-
-<div class="error-container">
-    <div class="error-header">
-        <span class="pin-icon" (click)="togglePin()">📌</span>
-        <!--<span class="close-icon" (click)="closeError()">&#x2715;</span>-->
+<div class="error-container" *ngIf="errorMessages && errorMessages.length > 0">
+    <div class="error-header" (click)="toggleExpand()">
+        <span class="pin-icon" (click)="togglePin($event)">📌</span>
+        <span class="close-icon" (click)="closeError($event)">&#x2715;</span>
     </div>
     <div *ngIf="isExpanded" class="error-body">
-        <!--<p class="error-message">{{ errorMessage }}</p>-->
-        <!--<div *ngIf="errorMessage" class="error-container">-->
-            <span class="error-message">{{ errorMessage }}</span>
-            <span class="close-icon" (click)="closeError()">&#x2715;</span>
-        <!--</div>-->
+        <div *ngFor="let error of errorMessages" class="error-message">
+            {{ error }} <span class="close-icon" (click)="removeError(error)">&#x2715;</span>
+        </div>
     </div>
 </div>

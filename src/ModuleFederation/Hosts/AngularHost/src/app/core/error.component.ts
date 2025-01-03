@@ -2,19 +2,20 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-error',
-    templateUrl: './error.component.html'    
+    templateUrl: './error.component.html'
 })
 export class ErrorComponent {
-    @Input() errorMessage: string | null = null;
+    @Input() errorMessages: string[] = [];
     isExpanded: boolean = false;
     isPinned: boolean = false;
 
-    closeError() {
-        this.errorMessage = null;
-        this.toggleExpand();
+    public closeError(event: Event) {
+        event.stopPropagation();
+        this.errorMessages = [];
     }
 
-    togglePin() {
+    public togglePin(event: Event) {
+        event.stopPropagation();
         this.isPinned = !this.isPinned;
         if (this.isPinned) {
             this.isExpanded = true;
@@ -24,9 +25,13 @@ export class ErrorComponent {
         }
     }
 
-    toggleExpand() {
+    public toggleExpand() {
         if (!this.isPinned) {
             this.isExpanded = !this.isExpanded;
         }
+    }
+
+    public removeError(error: string) {
+        this.errorMessages = this.errorMessages.filter(e => e !== error);
     }
 }

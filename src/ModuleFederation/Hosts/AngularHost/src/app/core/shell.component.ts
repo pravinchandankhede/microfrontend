@@ -18,7 +18,7 @@ export class ShellComponent implements OnDestroy {
     options!: PluginOptions;
     plugins: PluginOptions[] = [];
     themeChangedSubscription: Subscription;
-    error: string = '';
+    errors: string[] = [];
     errorSubscription: Subscription;
 
     @ViewChild('roleContainer', { read: ViewContainerRef, static: false }) roleContainer!: ViewContainerRef;
@@ -35,7 +35,7 @@ export class ShellComponent implements OnDestroy {
         });
 
         this.errorSubscription = this.eventBus.on<ErrorEventData>('ErrorEvent').subscribe((event: ErrorEventData) => {
-            this.error = event.errorMessage;
+            this.errors.push(event.errorMessage);
         })
 
         this.initialize();
