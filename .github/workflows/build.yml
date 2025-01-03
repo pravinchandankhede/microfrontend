@@ -41,5 +41,4 @@ jobs:
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
 
       - name: dist List directory contents
-        run: ls -la /home/runner/work/microfrontend/microfrontend
-        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
+        run: ls -la /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
