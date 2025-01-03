@@ -34,6 +34,7 @@ jobs:
 
       - name: Build project
         run: npm run build
+        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary
 
       - name: Run tests
         run: npm test
