@@ -1,6 +1,8 @@
-<div class="error-container" *ngIf="errorMessages && errorMessages.length > 0">
+<div *ngIf="errorMessages && errorMessages.length > 0" class="error-container">
     <div class="error-header" (click)="toggleExpand()">
-        <span class="pin-icon" (click)="togglePin($event)">📌</span>
+        <span class="pin-icon" (click)="togglePin($event)">
+            {{ isPinned ? '📌' : '📍' }}
+        </span>
         <span class="close-icon" (click)="closeError($event)">&#x2715;</span>
     </div>
     <div *ngIf="isExpanded" class="error-body">

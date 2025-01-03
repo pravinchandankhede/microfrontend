@@ -22,7 +22,7 @@
         "@angular/router": "^18.2.0",
         "bootstrap": "5.3.3",
         "jest-editor-support": "*",
-        "mfelibrary": "file:../../libraries/MFELibrary/dist/mfelibrary-0.0.5-alpha6.tgz",
+        "mfelibrary": "file:../../libraries/MFELibrary/dist/mfelibrary-0.0.5-alpha7.tgz",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10"
@@ -32,6 +32,7 @@
         "@angular/cli": "^18.2.10",
         "@angular/compiler-cli": "^18.2.0",
         "@types/jasmine": "~5.1.0",
+        "@types/node": "^22.10.5",
         "jasmine-core": "~5.2.0",
         "karma": "~6.4.0",
         "karma-chrome-launcher": "~3.2.0",

@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { EventBus, LoggerService, ThemeChangedEvent, ThemeChangedEventData } from 'mfelibrary';
+import { EventBus, LoggerService, ThemeChangedEvent, ThemeChangedEventData, ErrorEvent, ErrorEventData } from 'mfelibrary';
 import { HideMenuEvent, HideMenuEventData } from '../../models/custom.events';
 import { TeamsService } from '../../services/teams.service';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -14,6 +14,8 @@ export class TeamComponent implements OnInit, OnDestroy {
 
     teams!: Array<Team>;
     menuEventSubscription: Subscription;
+    //handler: any;
+
     constructor(
         private eventBus: EventBus,
         protected readonly teamsService: TeamsService,
@@ -27,17 +29,27 @@ export class TeamComponent implements OnInit, OnDestroy {
     ngOnInit() {
         this.eventBus.emit(new ThemeChangedEvent(new ThemeChangedEventData()));
 
-        this.eventBus.emit(new HideMenuEvent(new HideMenuEventData()));        
+        this.eventBus.emit(new HideMenuEvent(new HideMenuEventData()));
 
         this.teamsService.getTeams()
-            .subscribe((teams: Array<Team>): void => {
-                this.teams = teams;
-            }, (error: HttpErrorResponse): void => {
-                this.loggerService.log(error.message);
+            .subscribe({
+                next: (teams: Array<Team>): void => {
+                    this.teams = teams;
+                }, error: (error: HttpErrorResponse): void => {
+                    this.eventBus.emit(new ErrorEvent(new ErrorEventData("team", error.message)));
+                    this.loggerService.log(error.message);
+                }
             });
+
+        //this.handler = setInterval(() => {
+        //    let msg = "error message " + getLocaleDateFormat("en-US", new FormatWidth());
+        //    this.loggerService.log(msg);
+        //    this.eventBus.emit(new ErrorEvent(new ErrorEventData("team", msg)));
+        //}, 2000);
     }
 
     ngOnDestroy() {
         this.menuEventSubscription.unsubscribe();
+        //clearInterval(this.handler);
     }
 }
