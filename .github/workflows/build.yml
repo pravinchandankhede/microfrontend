@@ -30,7 +30,7 @@ jobs:
         
       - name: Install dependencies
         run: npm install 
-        working-directory: src/ModuleFederation/Libraries/MFELibrary
+        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary
 
       - name: Build project
         run: npm run build
