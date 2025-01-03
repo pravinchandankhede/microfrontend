@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install 
-        working-directory: /Libraries/MFELibrary
+        working-directory: src/ModuleFederation/Libraries/MFELibrary
 
       - name: Build project
         run: npm run build
