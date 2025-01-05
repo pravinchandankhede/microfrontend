@@ -45,3 +45,4 @@ jobs:
 
       - name: Publish package
         run: npm publish
+        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary
