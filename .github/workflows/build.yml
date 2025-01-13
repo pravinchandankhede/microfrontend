@@ -24,6 +24,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+          registry-url: 'https://npm.pkg.github.com'
           
       - name: List src directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
@@ -43,6 +44,9 @@ jobs:
       - name: List dist directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
 
+      - name: Set registry URL
+        run: npm config set registry https://npm.pkg.github.com
+        
       - name: Authenticate to GitHub Package Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
       
