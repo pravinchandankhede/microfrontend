@@ -1,6 +1,7 @@
 {
-  "name": "pravinchandankhede/mfelibrary",
+  "name": "pravinchandankhede/microfrontend",
   "version": "0.0.5-alpha7",
+    "author": 'pravinchandankhede',
   "repository": {
     "type": "git",
     "url": "https://github.com/pravinchandankhede/microfrontend.git"
