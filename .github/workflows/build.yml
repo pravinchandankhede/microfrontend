@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           
-      - name: List directory contents
+      - name: List src directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
         
       - name: Install dependencies
@@ -40,7 +40,7 @@ jobs:
         run: npm pack
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
 
-      - name: dist List directory contents
+      - name: List dist directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
 
       - name: Publish package
