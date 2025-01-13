@@ -1,6 +1,10 @@
 {
   "name": "mfelibrary",
   "version": "0.0.5-alpha7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pravinchandankhede/microfrontend.git"
+  }
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=127.0.0.1",
