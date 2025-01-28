@@ -1,4 +1,4 @@
-name: Build Angular Project
+name: Build Angular Client Project
 
 on:
   push:
@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           
+      - name: List directory contents
+        run: ls -la /home/runner/work/microfrontend/microfrontend
+
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
         
