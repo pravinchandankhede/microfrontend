@@ -39,7 +39,7 @@ jobs:
           npm cache clean --force
           rm -rf node_modules package-lock.json
           npm install
-        working-directory: /home/runner/work/mic-rofrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
+        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
 
