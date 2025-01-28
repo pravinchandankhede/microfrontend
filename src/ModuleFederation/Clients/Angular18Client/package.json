@@ -22,7 +22,7 @@
         "@angular/router": "^18.2.0",
         "bootstrap": "5.3.3",
         "jest-editor-support": "*",
-        "mfelibrary": "file:../../libraries/MFELibrary/dist/mfelibrary-0.0.5-alpha7.tgz",
+        "mfelibrary": "@pravinhchandankhede/mfelibrary-0.0.5-alpha7.tgz",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10"
