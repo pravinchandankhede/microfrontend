@@ -28,11 +28,16 @@ jobs:
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
 
-      - name: Install dependencies 2
-        run: npm install
-        working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
+      # - name: Install dependencies 2
+      #  run: npm install
+      #  working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
+      #  env:
+      #    NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
+
+      - name: Configure npm to use GitHub Packages
+        run: |
+          npm config set registry https://npm.pkg.github.com/
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ }}" > ~/.npmrc
 
       - name: Build project
         run: npm run build
