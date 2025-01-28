@@ -28,6 +28,9 @@ jobs:
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
 
+      - name: Set registry URL
+        run: npm config set registry https://npm.pkg.github.com
+
       - name: Configure npm to use GitHub Packages
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
         
