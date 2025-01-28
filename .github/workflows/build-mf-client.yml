@@ -27,6 +27,9 @@ jobs:
           
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
+
+      - name: List directory contents
+        run: ls -la /home/runner/work/microfrontend/microfrontend
         
       - name: Install dependencies
         run: npm install 
