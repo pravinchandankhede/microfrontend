@@ -50,7 +50,21 @@ jobs:
       - name: Authenticate to GitHub Package Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
       
+      - name: Check if package version exists
+        id: check-package
+        run: |
+          PACKAGE_NAME=$(jq -r '.name' /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/package.json)
+          PACKAGE_VERSION=$(jq -r '.version' /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/package.json)
+          if npm view $PACKAGE_NAME@$PACKAGE_VERSION; then
+            echo "Package version already exists."
+            echo "::set-output name=package_exists::true"
+          else
+            echo "Package version does not exist."
+            echo "::set-output name=package_exists::false"
+          fi
+
       - name: Publish package
+        if: steps.check-package.outputs.package_exists == 'false'
         run: npm publish
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Libraries/MFELibrary/dist
         env:
