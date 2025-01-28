@@ -9,10 +9,7 @@
         "test": "ng test",
         "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/pravinchandankhede/microfrontend.git"
-    },
+    
     "private": true,
     "dependencies": {
         "@angular-architects/module-federation": "^18.0.6",
