@@ -44,8 +44,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
-       # env:
-       #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Build project
         run: npm run build
