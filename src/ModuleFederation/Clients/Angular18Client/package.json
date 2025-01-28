@@ -11,7 +11,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/pravinchandankhede/microfrontend.git"
+        "url": "https://github.com/pravinchandankhede/microfrontend.git",
+        "directory": "src/modulefederation/clients/angular18client"
     },
     "private": true,
     "dependencies": {
