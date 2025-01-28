@@ -22,11 +22,11 @@
         "@angular/router": "^18.2.0",
         "bootstrap": "5.3.3",
         "jest-editor-support": "*",
-        
-        "@pravinchandankhede/mfelibrary": "0.0.5-alpha8",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
-        "zone.js": "~0.14.10"
+        "zone.js": "~0.14.10",
+        "@pravinchandankhede/mfelibrary": "https://npm.pkg.github.com/@pravinchandankhede/mfelibrary#0.0.5-alpha8"
+
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^18.2.10",
