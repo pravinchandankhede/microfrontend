@@ -35,10 +35,7 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ }}" > ~/.npmrc
         
       - name: Install dependencies 2
-        run: |
-          npm cache clean --force
-          rm -rf node_modules package-lock.json
-          npm install
+        run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
