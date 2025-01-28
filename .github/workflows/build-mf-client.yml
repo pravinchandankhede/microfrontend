@@ -28,9 +28,6 @@ jobs:
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
 
-      - name: Set registry URL
-        run: npm config set registry https://npm.pkg.github.com
-    
       - name: Install dependencies 2
         run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
