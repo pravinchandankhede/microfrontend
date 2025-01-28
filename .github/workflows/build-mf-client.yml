@@ -42,7 +42,9 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: ./src/ModuleFederation/Clients/Angular18Client
-        
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
+          
       - name: Build project
         run: npm run build
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
