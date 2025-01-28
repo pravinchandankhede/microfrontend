@@ -39,13 +39,13 @@ jobs:
       #  run: npm config set registry https://npm.pkg.github.com
         
       - name: Authenticate to GitHub Package Registry
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
       
       - name: Install dependencies
         run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
        # env:
-       #   NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
+       #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Build project
         run: npm run build
