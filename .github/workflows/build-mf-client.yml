@@ -28,8 +28,8 @@ jobs:
       - name: List directory contents
         run: ls -la /home/runner/work/microfrontend/microfrontend
 
-      - name: List directory contents
-        run: ls -la /home/runner/work/microfrontend/microfrontend
+      - name: Configure npm to use GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
         
       - name: Install dependencies
         run: npm install 
