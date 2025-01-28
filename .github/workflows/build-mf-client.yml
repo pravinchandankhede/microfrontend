@@ -38,7 +38,11 @@ jobs:
         run: |
           npm config set registry https://npm.pkg.github.com/
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ }}" > ~/.npmrc
-
+          
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./src/ModuleFederation/Clients/Angular18Client
+        
       - name: Build project
         run: npm run build
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
