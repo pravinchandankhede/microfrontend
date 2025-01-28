@@ -11,3 +11,4 @@ package-lock.json
 /src/Services/WebService.Services/WebService.Services.csproj.user
 /src/ModuleFederation/Hosts/AngularHost/package-lock.json
 /src/ModuleFederation/Clients/Angular18Client/package-lock.json
+/src/ModuleFederation/Libraries/MFELibrary/package-lock.json
