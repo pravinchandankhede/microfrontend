@@ -35,8 +35,8 @@ jobs:
       #  env:
       #    NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
    
-      - name: Set registry URL
-        run: npm config set registry https://npm.pkg.github.com
+      # - name: Set registry URL
+      #  run: npm config set registry https://npm.pkg.github.com
         
       - name: Authenticate to GitHub Package Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PAT }}" > ~/.npmrc
