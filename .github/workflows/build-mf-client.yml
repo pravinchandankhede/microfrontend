@@ -34,12 +34,8 @@ jobs:
       #  env:
       #    NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
 
-      # - name: Configure npm to use GitHub Packages
-      #  run: |
-      #    npm config set registry https://npm.pkg.github.com/
-      #    echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ }}" > ~/.npmrc
-      - name: Print Toek
-        run: echo "secret ${{ secrets.GH_PACKAGE_READ }}"
+      - name: Authenticate to GitHub Package Registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ }}" > ~/.npmrc
         
       - name: Install dependencies
         run: npm install
