@@ -31,7 +31,6 @@
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10",
         "@pravinchandankhede/mfelibrary": "0.0.5-alpha7"
-
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^18.2.10",
@@ -47,8 +46,5 @@
         "karma-jasmine-html-reporter": "~2.1.0",
         "ngx-build-plus": "^18.0.0",
         "typescript": "~5.5.2"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com"
     }
 }
