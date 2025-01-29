@@ -4,7 +4,6 @@ import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { RoleRoutingModule } from "./role-routing.module";
-import { RoleComponent } from "./role.component";
 
 @NgModule({
   imports: [
@@ -14,10 +13,6 @@ import { RoleComponent } from "./role.component";
     HttpClientModule,
     RoleRoutingModule,
     RouterModule
-    //SharedModule,
-    //TreeModule,
-    //TreeTableModule
   ],
-  //declarations: [RoleComponent]
 })
 export class RoleModule { }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoggerService } from 'mfelibrary';
+import { LoggerService } from '@pravinchandankhede/mfelibrary';
 import { NotificationSharedService } from '../shared/notificationshared.service';
 import { StaffService } from '../../services/staff.service';
 import { Staff } from '../../models/staff';

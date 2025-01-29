@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthorizationInterceptor, LoggerService, SessionService } from 'mfelibrary';
+import { AuthorizationInterceptor, LoggerService, SessionService } from '@pravinchandankhede/mfelibrary';
 import { NotificationSharedService } from './modules/shared/notificationshared.service';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 

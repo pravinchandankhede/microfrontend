@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { EventBus, LoggerService, ThemeChangedEvent, ThemeChangedEventData, ErrorEvent, ErrorEventData } from 'mfelibrary';
+import { EventBus, LoggerService, ThemeChangedEvent, ThemeChangedEventData, ErrorEvent, ErrorEventData } from '@pravinchandankhede/mfelibrary';
 import { HideMenuEvent, HideMenuEventData } from '../../models/custom.events';
 import { TeamsService } from '../../services/teams.service';
 import { HttpErrorResponse } from '@angular/common/http';
