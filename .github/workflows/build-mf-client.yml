@@ -24,35 +24,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://npm.pkg.github.com'
-          
-      - name: List directory contents
-        run: ls -la /home/runner/work/microfrontend/microfrontend
-
-      # - name: Install dependencies 2
-      #  run: npm install
-      #  working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
-      #  env:
-      #    NODE_AUTH_TOKEN: ${{ secrets.GH_PAT }}
-   
-      # - name: Set registry URL
-      #  run: npm config set registry https://npm.pkg.github.com
-        
-      # - name: Authenticate to GitHub Package Registry
-      #  run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_READ_TOKEN }}" > ~/.npmrc
-      
+          # registry-url: 'https://npm.pkg.github.com'
+               
       - name: Install dependencies
         run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: nodemodules List directory contents
-        run: ls -la /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client/node_modules
-        
+             
       - name: Build project
         run: npm run build
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client
-
-      - name: dist List directory contents
-        run: ls -la /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Clients/Angular18Client/dist
