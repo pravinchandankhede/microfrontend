@@ -27,7 +27,7 @@ jobs:
         run: Get-ChildItem -Force /home/runner/work/microfrontend/microfrontend | Format-List
         
       - name: Build with dotnet
-        working-directory: /home/runner/work/microfrontend/microfrontend/src/services/webservice.services
+        working-directory: D:\a\microfrontend\microfrontend\src\services\webservice.services
         run: dotnet build --configuration Release
 
       - name: dotnet publish
