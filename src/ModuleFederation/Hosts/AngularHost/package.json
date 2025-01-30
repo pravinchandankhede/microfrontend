@@ -9,6 +9,11 @@
         "test": "ng test",
         "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pravinchandankhede/microfrontend.git",
+        "directory": "src/modulefederation/hosts/angularhost"
+    },
     "private": true,
     "dependencies": {
         "@angular-architects/module-federation": "^18.0.6",
@@ -22,7 +27,7 @@
         "@angular/router": "^18.2.0",
         "bootstrap": "5.3.3",
         "jest-editor-support": "*",
-        "mfelibrary": "file:../../libraries/MFELibrary/dist/mfelibrary-0.0.5-alpha7.tgz",
+        "@pravinchandankhede/mfelibrary": "0.0.5-alpha7",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10"
@@ -41,5 +46,8 @@
         "karma-jasmine-html-reporter": "~2.1.0",
         "ngx-build-plus": "^18.0.0",
         "typescript": "~5.5.2"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     }
 }
