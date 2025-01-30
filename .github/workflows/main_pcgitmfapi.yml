@@ -23,6 +23,9 @@ jobs:
         with:
           dotnet-version: '9.x'
 
+      - name: List src directory contents
+        run: ls -la /home/runner/work/microfrontend/microfrontend
+        
       - name: Build with dotnet
         working-directory: /home/runner/work/microfrontend/microfrontend/src/services/webservice.services
         run: dotnet build --configuration Release
