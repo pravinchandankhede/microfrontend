@@ -1,0 +1,23 @@
+{
+    "mfe1": {
+        "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
+        "exposedModule": "./Module",
+        "displayName": "Team",
+        "routePath": "team",
+        "ngModuleName": "TeamModule"
+    },
+    "mfe2": {
+        "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
+        "exposedModule": "./StaffModule",
+        "displayName": "Staff",
+        "routePath": "staff",
+        "ngModuleName": "StaffModule"
+    },
+    "mfe3": {
+        "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
+        "exposedModule": "./RoleModule",
+        "displayName": "Role",
+        "routePath": "role",
+        "ngModuleName": "RoleModule"
+    }
+}

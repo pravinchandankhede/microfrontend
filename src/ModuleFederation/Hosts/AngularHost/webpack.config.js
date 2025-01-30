@@ -13,10 +13,10 @@ module.exports = withModuleFederationPlugin({
             strictVersion: true,
             requiredVersion: 'auto'
         }),
-        'mfelibrary': {
+        '@pravinchandankhede/mfelibrary': {
             singleton: true,
-            strictVersion: true,
-            requiredVersion: '0.0.5-alpha7',
+            strictVersion: false,
+            requiredVersion: '0.0.5-alpha8',
         },
     },
 });

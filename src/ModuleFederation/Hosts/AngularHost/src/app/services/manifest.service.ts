@@ -4,6 +4,7 @@ import { buildRoutes } from '../models/routes';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { ErrorEventData, EventBus, ErrorEvent } from '@pravinchandankhede/mfelibrary';
+import { environment } from '../../environments/environment';
 
 @Injectable({
     providedIn: 'root'
@@ -19,7 +20,9 @@ export class ManifestService {
     }
 
     public async loadManifestConfig(): Promise<void> {
-        await loadManifest("/assets/config.json")
+        let url = environment.production ? "/assets/config.prod.json" : "/assets/config.json";
+
+        await loadManifest(url)
             .catch((error: Error) => {
                 this.eventBus.emit(new ErrorEvent(new ErrorEventData(error.name, error.message)));
             });
