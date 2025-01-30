@@ -30,7 +30,7 @@
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10",
-        "@pravinchandankhede/mfelibrary": "0.0.5-alpha7"
+        "@pravinchandankhede/mfelibrary": "0.0.5-alpha8"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^18.2.10",

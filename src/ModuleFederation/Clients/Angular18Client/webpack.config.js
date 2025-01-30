@@ -14,6 +14,6 @@ module.exports = withModuleFederationPlugin({
 
     shared: {
         ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
-        'mfelibrary': { singleton: false, strictVersion: false, requiredVersion: 'auto' }
+        '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: false, requiredVersion: 'auto' }
     },
 });
