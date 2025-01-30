@@ -24,6 +24,7 @@ jobs:
           dotnet-version: '9.x'
 
       - name: Build with dotnet
+        working-directory: /home/runner/work/microfrontend/microfrontend/src/services/webservice.services
         run: dotnet build --configuration Release
 
       - name: dotnet publish
