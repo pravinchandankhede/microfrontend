@@ -24,14 +24,14 @@ jobs:
           dotnet-version: '9.x'
 
       - name: List src directory contents
-        run: Get-ChildItem -Force D:\a\microfrontend\microfrontend\src\services\webservice.services | Format-List
+        run: Get-ChildItem -Force D:\a\microfrontend\microfrontend\src\services\webservice.services
         
       - name: Build with dotnet
         working-directory: D:\a\microfrontend\microfrontend\src\services\webservice.services
         run: dotnet build --configuration Release
 
       - name: List src directory contents
-        run: Get-ChildItem -Force D:\a\microfrontend\microfrontend\src\services\webservice.services | Format-List
+        run: Get-ChildItem -Force D:\a\microfrontend\microfrontend\src\services\webservice.services
         
       - name: dotnet publish
         working-directory: D:\a\microfrontend\microfrontend\src\services\webservice.services
@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: D:\a\microfrontend\microfrontend\src\services\webservice.services\bin\Release\net9.0\publish\
 
   deploy:
     runs-on: windows-latest
