@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoggerService } from 'mfelibrary';
+import { LoggerService } from '@pravinchandankhede/mfelibrary';
 
 @Component({
   selector: 'home',

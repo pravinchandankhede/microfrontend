@@ -4,7 +4,7 @@ import { ManifestService } from '../services/manifest.service';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from '../models/plugin.model';
 import { LookupService } from '../services/lookup.service';
-import { ErrorEventData, EventBus, LoggerService, ThemeChangedEventData } from 'mfelibrary';
+import { ErrorEventData, EventBus, LoggerService, ThemeChangedEventData } from '@pravinchandankhede/mfelibrary';
 import { Subscription } from 'rxjs';
 
 @Component({

@@ -3,7 +3,7 @@ import { CustomManifest, CustomRemoteConfig } from '../models/config';
 import { buildRoutes } from '../models/routes';
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
-import { ErrorEventData, EventBus, ErrorEvent } from 'mfelibrary';
+import { ErrorEventData, EventBus, ErrorEvent } from '@pravinchandankhede/mfelibrary';
 
 @Injectable({
     providedIn: 'root'
