@@ -1,4 +1,4 @@
-name: Build MFELibrary Project
+name: Build & Publish MFELibrary to GitHub NPM Feed
 
 on:
   push:

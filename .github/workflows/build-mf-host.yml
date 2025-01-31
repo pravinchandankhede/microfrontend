@@ -1,4 +1,4 @@
-name: Build Angular Host Project
+name: Build & Deploy Angular Host Project
 
 on:
   push:

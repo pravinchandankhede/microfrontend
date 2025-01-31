@@ -1,4 +1,4 @@
-name: Build Angular Client Project
+name: Build & Deploy Angular Client Project
 
 on:
   push:
