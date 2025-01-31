@@ -3,11 +3,14 @@ import { catchError, map, Observable } from 'rxjs';
 import { Team } from '../models/team';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { LoggerService } from '@pravinchandankhede/mfelibrary';
+import { environment } from '../../environments/environment';
 
 @Injectable({
     providedIn: 'root'
 })
 export class TeamsService {
+
+    public getTeamsUrl = 'api/staff';
 
     constructor(
         protected readonly http: HttpClient,
@@ -16,7 +19,7 @@ export class TeamsService {
     }
 
     public getTeams(employeeId?: number): Observable<Array<Team>> {
-        let url = 'https://localhost:7246/api/Teams';
+        let url = environment.apiBaseUrl + 'api/Teams';
 
         return this.http.get<Array<Team>>(url)
             // Map the response data to an array of Team objects
