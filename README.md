@@ -3,6 +3,9 @@ This repository contains the framework to develop Micro Frontends based on Angul
 
 The repository provides Micro Frontend host app created in different technology and variety of clients. It also demonstrates the usage of different libraries used during the implemention.
 
+## Demo App
+Please refer for a demo app [Link](https://agreeable-sand-05b276e0f.4.azurestaticapps.net/)
+
 ## Module Federation
 This is based on the recent updates to the WebPack 5.0. You can find module federation reference [here](https://webpack.js.org/concepts/module-federation/). Its a easy to use and integrate with Angular apps and provide a good amount of support.
 
