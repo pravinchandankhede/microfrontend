@@ -1,51 +1,14 @@
 <div>
+    <h1>Micro Frontend Reference Architecture Implementation</h1>
 
+    <h3>Overview</h3>
+    <p>This project is a reference implementation of a micro frontend architecture using Angular and Module Federation. It consists of a host application called <strong>AngularHost</strong> that loads multiple child applications developed using Angular.</p>
+    <p>The host app loads the <strong>teams</strong>, <strong>staff</strong>, and <strong>role</strong> modules from the Angular18Client child applications. These are present in top level menu.</p>
 
-    <h1>Micro Frontend Reference Architecture Implemnetation</h1>
-
-    <br />
-    <br />
-    <h2>More Information</h2>
     <h3>Source Code</h3>
     <p>You can find the reference code <a href="https://github.com/pravinchandankhede/microfrontend">here</a></p>
 
-    <h3>Architecture Explanation</h3>
-    <p>You can refer the blog <a href="https://pravinchandankhede.github.io/posts/MicroFrontend/">here</a> for more details</p>
-
-    <p>The <strong>AngularHost</strong> project is a micro frontend host application that loads multiple child applications. In this case, it loads the <strong>teams</strong>, <strong>staff</strong>, and <strong>role</strong> modules from the Angular18Client child applications.</p>
-
-    <h2>Project Structure</h2>
-    <p>The project is organized into several key folders:</p>
-
-    <h3>Core</h3>
-    <p>The <strong>core</strong> folder contains core components and services that are used throughout the application. These are typically singleton services and utility classes that provide essential functionality.</p>
-    <ul>
-        <li><strong>Core Components:</strong> These are reusable components that provide common UI elements or functionality.</li>
-        <li><strong>Core Services:</strong> These services provide core functionality such as authentication, logging, and configuration management.</li>
-    </ul>
-
-    <h3>Models</h3>
-    <p>The <strong>models</strong> folder contains TypeScript interfaces and classes that define the data models used in the application. These models represent the structure of the data that is exchanged between the frontend and backend services.</p>
-    <ul>
-        <li><strong>Data Models:</strong> Interfaces and classes that define the shape of the data used in the application.</li>
-    </ul>
-
-    <h3>Modules</h3>
-    <p>The <strong>modules</strong> folder contains feature modules that encapsulate specific functionality of the application. Each module typically contains its own components, services, and routing configuration.</p>
-    <ul>
-        <li><strong>Teams Module:</strong> Manages the teams-related functionality.</li>
-        <li><strong>Staff Module:</strong> Manages the staff-related functionality.</li>
-        <li><strong>Role Module:</strong> Manages the role-related functionality.</li>
-    </ul>
-
-    <h3>Services</h3>
-    <p>The <strong>services</strong> folder contains application-wide services that provide business logic and data access functionality. These services are typically injected into components and other services using Angular's dependency injection system.</p>
-    <ul>
-        <li><strong>Business Services:</strong> Services that contain business logic and interact with backend APIs.</li>
-        <li><strong>Utility Services:</strong> Services that provide utility functions such as data formatting and validation.</li>
-    </ul>
-
-    <h2>Micro Frontend Architecture</h2>
+    <h3>Micro Frontend Architecture</h3>
     <p>The AngularHost project uses a micro frontend architecture to load and integrate multiple child applications. This approach allows for independent development and deployment of different parts of the application, improving scalability and maintainability.</p>
     <p>In this project, the AngularHost application loads the following child applications:</p>
     <ul>
@@ -55,5 +18,9 @@
     </ul>
 
     <p>Each child application is developed and deployed independently, and the AngularHost application dynamically loads them as needed.</p>
+    <p>It uses module-federation package as a base for this implementation</p>
+
+    <h3>Architecture Explanation</h3>
+    <p>For detailed explaination of this application, please refer my blog <a href="https://pravinchandankhede.github.io/posts/MicroFrontend/">here</a> for more details</p>
 
 </div>
