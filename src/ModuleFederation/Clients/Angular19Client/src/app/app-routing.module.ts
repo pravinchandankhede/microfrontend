@@ -9,9 +9,12 @@ const routes: Routes = [
         resolve: {},
         children: [
             {
-                path: 'contact/:staffId',
-                loadComponent: () => import('./contact-details/contact-details.component').then(m => m.ContactDetailsComponent)
-                //component: ContactDetailsComponent
+                path: 'contact',
+                loadComponent: () => import('./staff/staff.component').then(m => m.StaffComponent)                
+            },
+            {
+                path: 'contact/:id', // Add this route for contact details
+                component: ContactDetailsComponent
             },
             {
                 path: '', pathMatch: 'full', redirectTo: 'app',

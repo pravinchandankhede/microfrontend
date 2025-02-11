@@ -2,9 +2,11 @@
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using WebService.Services.Models;
 
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
 public class StaffController : ControllerBase
 {
 	[HttpGet(Name = "GetStaff")]
@@ -13,5 +15,16 @@ public class StaffController : ControllerBase
 		var content = await System.IO.File.ReadAllTextAsync("Data/staff.json");
 
 		return Ok(content);
+	}
+
+	[HttpGet("{id}")]
+	public async Task<IActionResult> GetStaffDetailAsync(Int32 id)
+	{
+		var content = await System.IO.File.ReadAllTextAsync("Data/staff.json");
+		var staff = JsonSerializer.Deserialize<List<Staff>>(content);
+
+		var result = staff.FirstOrDefault(x => x.StaffId == id);
+
+		return Ok(result);
 	}
 }

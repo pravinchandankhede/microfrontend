@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggerService } from '@pravinchandankhede/mfelibrary';
-import { NotificationSharedService } from '../shared/notificationshared.service';
-import { StaffService } from '../../services/staff.service';
-import { Staff } from '../../models/staff';
+import { StaffService } from '../services/staff.service';
+import { Staff } from '../models/staff';
 import { HttpErrorResponse } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'home',
     standalone: true,
+    imports: [CommonModule, RouterModule],
     templateUrl: './staff.component.html'
 })
 export class StaffComponent implements OnInit {
@@ -16,11 +18,9 @@ export class StaffComponent implements OnInit {
 
     constructor(
         private readonly loggerService: LoggerService,
-        private readonly notifyService: NotificationSharedService,
         private readonly staffService: StaffService) {
         loggerService.log('staff cons');
-        //notificationService.log('message');
-        notifyService.log('notify');
+
     }
 
     ngOnInit() {

@@ -16,7 +16,7 @@ export class ContactDetailsComponent implements OnInit {
     constructor(private route: ActivatedRoute, private staffService: StaffService) { }
 
     ngOnInit(): void {
-        const id = this.route.snapshot.paramMap.get('staffid');
+        const id = this.route.snapshot.paramMap.get('id');
         this.getStaffDetails(id);
     }
 
