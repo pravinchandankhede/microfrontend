@@ -9,7 +9,7 @@ const routes: Routes = [
         resolve: {},
         children: [
             {
-                path: 'contact',
+                path: 'contact/:staffId',
                 loadComponent: () => import('./contact-details/contact-details.component').then(m => m.ContactDetailsComponent)
                 //component: ContactDetailsComponent
             },

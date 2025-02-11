@@ -1,1 +1,31 @@
-<p>contact-details works!</p>
+<div class="container mt-4">
+    <div *ngIf="staff">
+        <h2>Staff Details</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" [value]="staff.name" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" [value]="staff.email" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" [value]="staff.phone" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="position" class="form-label">Position</label>
+                <input type="text" class="form-control" id="position" [value]="staff.position" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="department" class="form-label">Department</label>
+                <input type="text" class="form-control" id="department" [value]="staff.department" readonly>
+            </div>
+            <!-- Add more fields as necessary -->
+        </form>
+    </div>
+    <div *ngIf="!staff">
+        <p>Loading...</p>
+    </div>
+</div>
