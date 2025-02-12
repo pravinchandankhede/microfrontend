@@ -5,12 +5,13 @@ module.exports = withModuleFederationPlugin({
     name: 'Angular19Client',
 
     exposes: {
-        './Component': './src/app/contact-details/contact-details.component.ts',
-        './Component': './src/app/staff/staff.component.ts'        
+        './ContactDetailsComponent': './src/app/contact-details/contact-details.component.ts',
+        './StaffComponent': './src/app/staff/staff.component.ts',
+        './AppRoute': './src/app/app-routing.module.ts'
     },
 
     shared: {
-        ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+        ...shareAll({ singleton: true, strictVersion: false, requiredVersion: 'auto' }),
         '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: false, requiredVersion: 'auto' }
     },
 });
