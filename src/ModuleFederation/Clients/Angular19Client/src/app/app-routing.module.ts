@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
 import { AppComponent } from './app.component';
+import { StaffComponent } from './staff/staff.component';
 
 const routes: Routes = [
     {
@@ -9,11 +10,13 @@ const routes: Routes = [
         resolve: {},
         children: [
             {
-                path: 'contact',
-                loadComponent: () => import('./staff/staff.component').then(m => m.StaffComponent)                
+                path: 'staff',
+                //loadComponent: () => import('./staff/staff.component').then(m => m.StaffComponent)
+                component: StaffComponent
             },
             {
                 path: 'contact/:id', // Add this route for contact details
+                //loadComponent: () => import('./contact-details/contact-details.component').then(m => m.ContactDetailsComponent)
                 component: ContactDetailsComponent
             },
             {
