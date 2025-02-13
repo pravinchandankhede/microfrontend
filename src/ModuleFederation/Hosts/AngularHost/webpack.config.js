@@ -14,7 +14,7 @@ module.exports = withModuleFederationPlugin({
             requiredVersion: 'auto'
         }),
         '@pravinchandankhede/mfelibrary': {
-            singleton: true,
+            singleton: false,
             strictVersion: false,
             requiredVersion: '0.0.5-alpha8',
         },

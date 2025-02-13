@@ -4,7 +4,7 @@ import { ContactDetailsComponent } from './contact-details/contact-details.compo
 import { AppComponent } from './app.component';
 import { StaffComponent } from './staff/staff.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: 'app',
         resolve: {},

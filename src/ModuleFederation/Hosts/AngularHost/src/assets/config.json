@@ -18,6 +18,20 @@
         "exposedModule": "./RoleModule",
         "displayName": "Role",
         "routePath": "role",
-        "ngModuleName": "RoleModule"        
+        "ngModuleName": "RoleModule"
+    },
+    "mfe4": {
+        "remoteEntry": "http://localhost:56966/remoteEntry.js",
+        "exposedModule": "./AppRoute",
+        "displayName": "Contact Details",
+        "routePath": "contactdetails",
+        "ngModuleName": "ContactDetailsComponent"
+    },
+    "mfe5": {
+        "remoteEntry": "http://localhost:56966/remoteEntry.js",
+        "exposedModule": "./AppRoute",
+        "displayName": "Staff Details",
+        "routePath": "staffdetails",
+        "ngModuleName": "StaffComponent"
     }
 }

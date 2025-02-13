@@ -19,5 +19,19 @@
         "displayName": "Role",
         "routePath": "role",
         "ngModuleName": "RoleModule"
+    },
+    "mfe4": {
+        "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
+        "exposedModule": "./AppRoute",
+        "displayName": "Contact Details",
+        "routePath": "contactdetails",
+        "ngModuleName": "ContactDetailsComponent"
+    },
+    "mfe5": {
+        "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
+        "exposedModule": "./AppRoute",
+        "displayName": "Staff Details",
+        "routePath": "staffdetails",
+        "ngModuleName": "StaffComponent"
     }
 }
