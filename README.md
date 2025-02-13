@@ -25,7 +25,7 @@ The Host demonstrate a Angular 18 Host that loads different clients from Clients
 The "Clients" folder contains mifro frontend apps based on Angular 17, 18, 19, React , Vue, etc.
 
 - **Angular 18 Working Sample** [Link](https://green-river-0b3b28a0f.4.azurestaticapps.net/)
-- **Angular 19 Working Sample** [Link](https://happy-coast-09c6d310f.4.azurestaticapps.net/app/staff/)
+- **Angular 19 Working Sample** [Link](https://happy-coast-09c6d310f.4.azurestaticapps.net/)
 
 #### [Library](https://github.com/pravinchandankhede/microfrontend/tree/main/src/ModuleFederation/Libraries/MFELibrary)
 This projects contains the components and classes to facilitate the code sharing, reusability and interactivity between Host & Client.
