@@ -7,16 +7,16 @@ export function buildRoutes(options: CustomManifest): Routes {
 
     const lazyRoutes: Routes = Object.keys(options).map(key => {
         const entry = options[key];
-        //return {
-        //    path: entry.routePath,
-        //    loadChildren: () =>
-        //        loadRemoteModule({
-        //            type: 'manifest',
-        //            remoteName: key,
-        //            exposedModule: entry.exposedModule
-        //        })
-        //            .then(m => m[entry.ngModuleName])
-        //}
+        return {
+            path: entry.routePath,
+            loadChildren: () =>
+                loadRemoteModule({
+                    type: 'manifest',
+                    remoteName: key,
+                    exposedModule: entry.exposedModule
+                })
+                    .then(m => m[entry.ngModuleName])
+        }
 
         //return {
         //    path: entry.routePath,
@@ -31,19 +31,19 @@ export function buildRoutes(options: CustomManifest): Routes {
         //            .then(m => m[entry.ngModuleName])
         //}
 
-        return {
-            path: entry.routePath,
+        //return {
+        //    path: entry.routePath,
             
-            loadComponent: () =>
-                loadRemoteModule({
-                    //type: 'manifest',
-                    //remoteName: key,
-                    type: 'module',
-                    remoteEntry: entry.remoteEntry,
-                    exposedModule: entry.exposedModule
-                })
-                    .then(m => m[entry.ngModuleName])
-        }
+        //    loadComponent: () =>
+        //        loadRemoteModule({
+        //            //type: 'manifest',
+        //            //remoteName: key,
+        //            type: 'module',
+        //            remoteEntry: entry.remoteEntry,
+        //            exposedModule: entry.exposedModule
+        //        })
+        //            .then(m => m[entry.ngModuleName])
+        //}
     });
 
     if (APP_ROUTES.length > 0) {
