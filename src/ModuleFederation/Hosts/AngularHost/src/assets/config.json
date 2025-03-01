@@ -21,14 +21,14 @@
         "ngModuleName": "RoleModule"
     },
     "mfe4": {
-        "remoteEntry": "http://localhost:56966/remoteEntry.js",
-        "exposedModule": "./AppRoute",
+        "remoteEntry": "http://localhost:4202/remoteEntry.js",
+        "exposedModule": "./ContactDetailsComponent",
         "displayName": "Contact Details",
         "routePath": "contactdetails",
         "ngModuleName": "ContactDetailsComponent"
     },
     "mfe5": {
-        "remoteEntry": "http://localhost:56966/remoteEntry.js",
+        "remoteEntry": "http://localhost:4202/remoteEntry.js",
         "exposedModule": "./AppRoute",
         "displayName": "Staff Details",
         "routePath": "staffdetails",

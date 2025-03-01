@@ -21,6 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Services", "..\S
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular19Client", "Clients\Angular19Client\Angular19Client.esproj", "{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		run.cmd = run.cmd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,5 +70,8 @@ Global
 		{6DFA7C60-9063-42DB-ACB5-36DD8335FF88} = {E11A26AC-106B-4179-AB89-BB3595ACA351}
 		{BF1CC008-2451-4DA8-9466-4B83B4306173} = {EB0C8A50-E9CB-4AC1-A4AF-61510D68ADC2}
 		{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0} = {4674D81F-EE12-43F8-95CA-BE3D77EF2484}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ED02D52-7ED0-427B-9350-17494C0E8508}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "standalone": false
+          "standalone": true
         },
         "@schematics/angular:directive": {
           "standalone": false
@@ -92,8 +92,8 @@
             },
             "defaultConfiguration": "development",
             "options": {
-                "port": 56966,
-                "publicHost": "http://localhost:56966",
+                "port": 4202,
+                "publicHost": "http://localhost:4202",
                 "extraWebpackConfig": "webpack.config.js"
             }
         },
