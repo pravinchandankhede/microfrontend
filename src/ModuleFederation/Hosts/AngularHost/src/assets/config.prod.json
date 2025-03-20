@@ -4,34 +4,39 @@
         "exposedModule": "./Module",
         "displayName": "Team",
         "routePath": "team",
-        "ngModuleName": "TeamModule"
+        "ngModuleName": "TeamModule",
+        "type": "module"
     },
     "mfe2": {
         "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./StaffModule",
         "displayName": "Staff",
         "routePath": "staff",
-        "ngModuleName": "StaffModule"
+        "ngModuleName": "StaffModule",
+        "type": "module"
     },
     "mfe3": {
         "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./RoleModule",
         "displayName": "Role",
         "routePath": "role",
-        "ngModuleName": "RoleModule"
+        "ngModuleName": "RoleModule",
+        "type": "module"
     },
     "mfe4": {
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
-        "exposedModule": "./AppRoute",
+        "exposedModule": "./ContactDetailsComponent",
         "displayName": "Contact Details",
         "routePath": "contactdetails",
-        "ngModuleName": "ContactDetailsComponent"
+        "ngModuleName": "ContactDetailsComponent",
+        "type": "component"
     },
     "mfe5": {
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
-        "exposedModule": "./AppRoute",
+        "exposedModule": "./StaffComponent",
         "displayName": "Staff Details",
         "routePath": "staffdetails",
-        "ngModuleName": "StaffComponent"
+        "ngModuleName": "StaffComponent",
+        "type": "component"
     }
 }
