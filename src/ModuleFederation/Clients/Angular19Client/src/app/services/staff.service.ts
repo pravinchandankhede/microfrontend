@@ -31,8 +31,6 @@ export class StaffService {
                 ));
     }
 
-
-
     public getStaff(staffId?: number): Observable<Array<Staff>> {
         let url = environment.apiBaseUrl + 'api/staff';
 

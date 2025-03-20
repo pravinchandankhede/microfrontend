@@ -9,7 +9,8 @@ import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'shell',
-    templateUrl: './shell.component.html'
+    templateUrl: './shell.component.html',
+    standalone: false
 })
 export class ShellComponent implements OnDestroy {
     remotes: CustomRemoteConfig[] = [];

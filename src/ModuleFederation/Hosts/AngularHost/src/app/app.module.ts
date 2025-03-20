@@ -8,7 +8,7 @@ import { ManifestService } from './services/manifest.service';
 import { AuthorizationInterceptor, LoggerService, SessionService } from '@pravinchandankhede/mfelibrary';
 import { NotificationSharedService } from './modules/shared/notificationshared.service';
 import { LookupService } from './services/lookup.service';
-import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -18,7 +18,8 @@ import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@a
         BrowserModule,
         AppRoutingModule,
         CoreModule,
-        CommonModule        
+        CommonModule,
+        HttpClientModule
     ],
     providers: [
         {

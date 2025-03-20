@@ -13,7 +13,7 @@ module.exports = withModuleFederationPlugin({
     },
 
     shared: {
-        ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
-        '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: false, requiredVersion: 'auto' }
+        ...shareAll({ singleton: false, strictVersion: false, requiredVersion: 'auto' }),
+        '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: true, requiredVersion: 'auto' }
     },
 });

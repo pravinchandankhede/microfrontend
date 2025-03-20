@@ -18,7 +18,8 @@ export class StaffComponent implements OnInit {
 
     constructor(
         private readonly loggerService: LoggerService,
-        private readonly staffService: StaffService) {
+        private readonly staffService: StaffService
+    ) {
         loggerService.log('staff cons');
 
     }

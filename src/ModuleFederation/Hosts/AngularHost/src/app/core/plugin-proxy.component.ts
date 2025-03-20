@@ -3,7 +3,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { PluginOptions } from '../models/plugin.model';
 
 @Component({
-    standalone: true,
+    standalone: false,
     selector: 'plugin-proxy',
     template: `
         <ng-container #placeHolder></ng-container>

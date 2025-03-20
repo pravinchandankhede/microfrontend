@@ -3,7 +3,8 @@ import { LoggerService } from '@pravinchandankhede/mfelibrary';
 
 @Component({
   selector: 'home',
-  templateUrl: './home.component.html'
+    templateUrl: './home.component.html',
+    standalone: false
 })
 export class HomeComponent {
 

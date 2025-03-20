@@ -2,7 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-error',
-    templateUrl: './error.component.html'
+    templateUrl: './error.component.html',
+    standalone: false
 })
 export class ErrorComponent {
     @Input() errorMessages: string[] = [];
