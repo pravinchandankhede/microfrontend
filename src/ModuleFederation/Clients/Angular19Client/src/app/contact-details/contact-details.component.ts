@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Staff } from '../models/staff';
 import { HttpErrorResponse } from '@angular/common/http';
 import { LoggerService } from '@pravinchandankhede/mfelibrary';
+import { catchError, of } from 'rxjs';
 
 @Component({
     selector: 'app-contact-details',
@@ -22,23 +23,19 @@ export class ContactDetailsComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        //const id = this.route.snapshot.paramMap.get('id');
-        //this.getStaffDetails(id);
-
-        //ngOnInit() {
-
-        this.staffService.getStaff()
-            .subscribe((staff: Array<Staff>): void => {
-                this.staff = staff;
-            }, (error: HttpErrorResponse): void => {
-                this.loggerService.log(error.message);
-            });
-        //}
+        const id = this.route.snapshot.paramMap.get('id');
+        this.getStaffDetails(id);
     }
 
     getStaffDetails(id: string | null): void {
         if (id) {
-            this.staffService.getStaffDetails(id).subscribe(data => {
+            
+            this.staffService.getStaffDetails(id).pipe(
+                catchError((error: HttpErrorResponse) => {
+                    this.loggerService.log(error.message);
+                    return of(null);
+                })
+            ).subscribe(data => {
                 this.staff = data;
             });
         }
