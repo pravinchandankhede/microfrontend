@@ -27,7 +27,7 @@
         "remoteEntry": "http://localhost:4202/remoteEntry.js",
         "exposedModule": "./ContactDetailsComponent",
         "displayName": "Contact Details",
-        "routePath": "contact",
+        "routePath": "contact/:id",
         "ngModuleName": "ContactDetailsComponent",
         "type": "component"
     },

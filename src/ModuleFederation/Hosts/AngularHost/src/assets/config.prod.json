@@ -27,7 +27,7 @@
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./ContactDetailsComponent",
         "displayName": "Contact Details",
-        "routePath": "app/contact",
+        "routePath": "contact/:id",
         "ngModuleName": "ContactDetailsComponent",
         "type": "component"
     },
@@ -35,7 +35,7 @@
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./StaffComponent",
         "displayName": "Staff Details",
-        "routePath": "app/staffdetails",
+        "routePath": "staffdetails",
         "ngModuleName": "StaffComponent",
         "type": "component"
     }

@@ -26,8 +26,14 @@
 .error-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
+
+/*.error-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
 
 .error-message {
     margin: 5px 0;

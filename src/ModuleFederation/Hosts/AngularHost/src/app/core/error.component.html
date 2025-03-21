@@ -1,6 +1,7 @@
 <div *ngIf="errorMessages && errorMessages.length > 0" class="error-container">
     <div class="error-header" (click)="toggleExpand()">
         <span class="pin-icon" (click)="togglePin($event)">
+            Errors
             {{ isPinned ? '📌' : '📍' }}
         </span>
         <span class="close-icon" (click)="closeError($event)">&#x2715;</span>
