@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { StaffService } from '../services/staff.service';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { Staff } from '../models/staff';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorEventData, ErrorEvent, EventBus, LoggerService } from '@pravinchandankhede/mfelibrary';
@@ -22,6 +22,7 @@ export class ContactDetailsComponent implements OnInit {
         private staffService: StaffService,
         private readonly loggerService: LoggerService,
         private readonly eventBus: EventBus,
+        private location: Location
     ) { }
 
     ngOnInit(): void {
@@ -50,5 +51,9 @@ export class ContactDetailsComponent implements OnInit {
                 this.staff = data;
             });
         }
+    }
+
+    goBack(): void {
+        this.location.back();
     }
 }
