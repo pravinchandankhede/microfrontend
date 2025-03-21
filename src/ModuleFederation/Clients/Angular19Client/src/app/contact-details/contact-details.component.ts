@@ -16,6 +16,7 @@ import { catchError, of } from 'rxjs';
 })
 export class ContactDetailsComponent implements OnInit {
     staff: any;
+    loadingMessage = 'Loading...';
 
     constructor(private route: ActivatedRoute,
         private staffService: StaffService,
@@ -30,6 +31,7 @@ export class ContactDetailsComponent implements OnInit {
         }
         else {
             this.eventBus.emit(new ErrorEvent(new ErrorEventData('Error', 'Invalid staff id')));
+            this.loadingMessage = 'Invalid staff id';
         }
         //    if (Number.isInteger(Number.parseInt(id))) {
         //        this.getStaffDetails(id);
