@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { StaffService } from '../services/staff.service';
 import { CommonModule, Location } from '@angular/common';
-import { Staff } from '../models/staff';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ErrorEventData, ErrorEvent, EventBus, LoggerService } from '@pravinchandankhede/mfelibrary';
 import { catchError, of } from 'rxjs';
@@ -32,16 +31,12 @@ export class ContactDetailsComponent implements OnInit {
         }
         else {
             this.eventBus.emit(new ErrorEvent(new ErrorEventData('Error', 'Invalid staff id')));
-            this.loadingMessage = 'Invalid staff id';
+            this.loadingMessage = 'Invalid staff id.. Pls go back to home screen';
         }
-        //    if (Number.isInteger(Number.parseInt(id))) {
-        //        this.getStaffDetails(id);
-        //    }
     }
 
     getStaffDetails(id: string | null): void {
         if (id) {
-
             this.staffService.getStaffDetails(id).pipe(
                 catchError((error: HttpErrorResponse) => {
                     this.loggerService.log(error.message);
