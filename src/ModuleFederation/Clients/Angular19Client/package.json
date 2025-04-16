@@ -11,7 +11,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/pravinchandankhede/microfrontend.git"
+        "url": "https://github.com/pravinchandankhede/microfrontend.git",
+        "directory": "src/modulefederation/clients/angular19client"
     },
     "private": true,
     "dependencies": {
@@ -26,6 +27,7 @@
         "@angular/router": "19.2.0",
         "@pravinchandankhede/mfelibrary": "0.0.5-alpha8",
         "bootstrap": "5.3.3",
+        "force": "^0.0.3",
         "jest-editor-support": "*",
         "rxjs": "7.8.2",
         "tslib": "2.8.1",
