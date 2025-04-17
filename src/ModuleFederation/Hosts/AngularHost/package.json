@@ -11,21 +11,22 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/pravinchandankhede/microfrontend.git"
+        "url": "https://github.com/pravinchandankhede/microfrontend.git",
+        "directory": "src/modulefederation/hosts/angularhost"
     },
     "private": true,
     "dependencies": {
         "@angular-architects/module-federation": "19.0.3",
-        "@angular/animations": "19.2.0",
-        "@angular/common": "19.2.0",
-        "@angular/compiler": "19.2.0",
-        "@angular/core": "19.2.0",
-        "@angular/forms": "19.2.0",
-        "@angular/platform-browser": "19.2.0",
-        "@angular/platform-browser-dynamic": "19.2.0",
-        "@angular/router": "19.2.0",
+        "@angular/animations": "19.2.6",
+        "@angular/common": "19.2.6",
+        "@angular/compiler": "19.2.6",
+        "@angular/core": "19.2.6",
+        "@angular/forms": "19.2.6",
+        "@angular/platform-browser": "19.2.6",
+        "@angular/platform-browser-dynamic": "19.2.6",
+        "@angular/router": "19.2.6",
         "@pravinchandankhede/mfelibrary": "0.0.5-alpha8",
-        "bootstrap": "5.3.3",
+        "bootstrap": "5.3.5",
         "jest-editor-support": "*",
         "rxjs": "7.8.2",
         "tslib": "2.8.1",
@@ -33,13 +34,13 @@
     },
     "devDependencies": {
         "@angular-architects/module-federation-tools": "19.0.3",
-        "@angular-devkit/build-angular": "19.2.0",
-        "@angular-devkit/core": "19.2.0",
-        "@angular/cli": "19.2.0",
-        "@angular/compiler-cli": "19.2.0",
+        "@angular-devkit/build-angular": "19.2.7",
+        "@angular-devkit/core": "19.2.7",
+        "@angular/cli": "19.2.7",
+        "@angular/compiler-cli": "19.2.6",
         "@types/jasmine": "5.1.7",
-        "@types/node": "22.13.8",
-        "eslint": "^9.17.0",
+        "@types/node": "22.14.1",
+        "eslint": "9.24.0",
         "jasmine-core": "5.6.0",
         "karma": "6.4.4",
         "karma-chrome-launcher": "3.2.0",
@@ -47,7 +48,7 @@
         "karma-jasmine": "5.1.0",
         "karma-jasmine-html-reporter": "2.1.0",
         "ngx-build-plus": "19.0.0",
-        "typescript": "5.8.2"
+        "typescript": "5.8.3"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
