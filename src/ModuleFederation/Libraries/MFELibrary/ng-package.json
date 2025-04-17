@@ -15,6 +15,7 @@
     "rxjs",
     "zone.js",
     "jest-editor-support",
-    "@angular-architects/module-federation"
+    "@angular-architects/module-federation",
+    "force"
   ]
 }
