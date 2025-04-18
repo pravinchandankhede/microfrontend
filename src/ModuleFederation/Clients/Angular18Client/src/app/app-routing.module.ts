@@ -7,7 +7,7 @@ const routes: Routes = [
         resolve: {},
         children: [
             {
-                path: 'team',
+                path: 'team2',
                 loadChildren: () => import('./modules/team/team.module')
                     .then(mod => mod.TeamModule)
             },

@@ -18,29 +18,29 @@ export const APP_ROUTES: Routes = [
                 loadChildren: () => import('./modules/config/config.module')
                     .then(mod => mod.ConfigModule)
             },
-            //{
-            //    //matcher: startsWith('angular'),
-            //    path: 'angular',
-            //    component: WebComponentWrapper,
-            //    data: {
-            //        type : 'module',
-            //        remoteEntry: 'http://localhost:4201/remoteEntry.js',
-            //        //remoteName: 'react',
-            //        exposedModule: './web-components',
-            //        elementName: 'app-root'
-            //    } as WebComponentWrapperOptions
-            //},
-            //{
-            //    //matcher: startsWith('angular'),
-            //    path: 'team2',
-            //    component: WebComponentWrapper,
-            //    data: {
-            //        type: 'module',
-            //        remoteEntry: 'http://localhost:4201/remoteEntry.js',
-            //        exposedModule: './team-components',
-            //        elementName: 'app-team'
-            //    } as WebComponentWrapperOptions
-            //},
+            {
+                //matcher: startsWith('angular'),
+                path: 'angular',
+                component: WebComponentWrapper,
+                data: {
+                    type : 'module',
+                    remoteEntry: 'http://localhost:4201/remoteEntry.js',
+                    //remoteName: 'react',
+                    exposedModule: './web-components',
+                    elementName: 'app-root'
+                } as WebComponentWrapperOptions
+            },
+            {
+                //matcher: startsWith('angular'),
+                path: 'team2',
+                component: WebComponentWrapper,
+                data: {
+                    type: 'module',
+                    remoteEntry: 'http://localhost:4201/remoteEntry.js',
+                    exposedModule: './team-components',
+                    elementName: 'app-team'
+                } as WebComponentWrapperOptions
+            },
             {
                 path: '', pathMatch: 'full', redirectTo: 'home'
             }

@@ -7,7 +7,7 @@ import { Team } from '../../models/team';
 import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'home',
+    selector: 'app-team',
     templateUrl: './team.component.html'
 })
 export class TeamComponent implements OnInit, OnDestroy {

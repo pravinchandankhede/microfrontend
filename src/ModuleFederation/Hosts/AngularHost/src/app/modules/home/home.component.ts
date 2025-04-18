@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { LoggerService } from '@pravinchandankhede/mfelibrary';
 
 @Component({
-  selector: 'home',
+    selector: 'home',
     templateUrl: './home.component.html',
     standalone: false
 })
