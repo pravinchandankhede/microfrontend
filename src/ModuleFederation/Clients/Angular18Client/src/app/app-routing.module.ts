@@ -22,6 +22,11 @@ const routes: Routes = [
                     .then(mod => mod.RoleModule)
             },
             {
+                path: 'cost',
+                loadChildren: () => import('./modules/cost/cost.module')
+                    .then(mod => mod.CostModule)
+            },
+            {
                 path: '', pathMatch: 'full', redirectTo: 'home'
             }
         ]

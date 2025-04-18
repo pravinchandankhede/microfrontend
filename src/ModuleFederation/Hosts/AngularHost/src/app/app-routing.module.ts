@@ -42,6 +42,17 @@ export const APP_ROUTES: Routes = [
                 } as WebComponentWrapperOptions
             },
             {
+                //matcher: startsWith('angular'),
+                path: 'cost',
+                component: WebComponentWrapper,
+                data: {
+                    type: 'module',
+                    remoteEntry: 'http://localhost:4201/remoteEntry.js',
+                    exposedModule: './cost-components',
+                    elementName: 'app-cost'
+                } as WebComponentWrapperOptions
+            },
+            {
                 path: '', pathMatch: 'full', redirectTo: 'home'
             }
         ]

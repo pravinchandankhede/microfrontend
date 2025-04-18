@@ -11,7 +11,8 @@ module.exports = withModuleFederationPlugin({
         //'./RoleModule': './src/app/modules/role/role.module.ts',
         //'./RoleModuleComponent': './src/app/modules/role/role.component.ts',
         './web-components': './src/bootstrap.ts',
-        './team-components': './src/app/modules/team/team.module.ts'
+        './team-components': './src/app/modules/team/team.module.ts',
+        './cost-components': './src/app/modules/cost/cost.module.ts'
     },
 
     //shared: {
