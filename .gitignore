@@ -13,3 +13,6 @@ package-lock.json
 /src/ModuleFederation/Clients/Angular18Client/package-lock.json
 /src/ModuleFederation/Libraries/MFELibrary/package-lock.json
 /src/ModuleFederation/Clients/Angular18Client/.npmrc
+/src/ModuleFederation/Clients/Angular18Client/.npmrc
+/src/ModuleFederation/Clients/Angular19Client/.npmrc
+/src/ModuleFederation/Hosts/AngularHost/.npmrc

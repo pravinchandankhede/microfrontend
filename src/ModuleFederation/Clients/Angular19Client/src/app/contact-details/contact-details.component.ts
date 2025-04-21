@@ -31,7 +31,7 @@ export class ContactDetailsComponent implements OnInit {
         }
         else {
             this.eventBus.emit(new ErrorEvent(new ErrorEventData('Error', 'Invalid staff id')));
-            this.loadingMessage = 'Invalid staff id.. Pls go back to home screen';
+            this.loadingMessage = 'Invalid staff id.. Pls go back to staffing screen and select a record';
         }
     }
 

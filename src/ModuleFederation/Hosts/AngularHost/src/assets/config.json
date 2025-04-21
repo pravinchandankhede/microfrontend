@@ -1,28 +1,5 @@
 {
-    "mfe1": {
-        "remoteEntry": "http://localhost:4201/remoteEntry.js",
-        "exposedModule": "./Module",
-        "displayName": "Team",
-        "routePath": "team",
-        "ngModuleName": "TeamModule",
-        "type": "module"
-    },
-    "mfe2": {
-        "remoteEntry": "http://localhost:4201/remoteEntry.js",
-        "exposedModule": "./StaffModule",
-        "displayName": "Staff",
-        "routePath": "staff",
-        "ngModuleName": "StaffModule",
-        "type": "module"
-    },
-    "mfe3": {
-        "remoteEntry": "http://localhost:4201/remoteEntry.js",
-        "exposedModule": "./RoleModule",
-        "displayName": "Role",
-        "routePath": "role",
-        "ngModuleName": "RoleModule",
-        "type": "module"
-    },
+    
     "mfe4": {
         "remoteEntry": "http://localhost:4202/remoteEntry.js",
         "exposedModule": "./ContactDetailsComponent",

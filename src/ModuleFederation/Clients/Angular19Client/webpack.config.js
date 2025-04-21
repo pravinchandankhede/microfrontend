@@ -7,7 +7,8 @@ module.exports = withModuleFederationPlugin({
     exposes: {
         './ContactDetailsComponent': './src/app/contact-details/contact-details.component.ts',
         './StaffComponent': './src/app/staff/staff.component.ts',
-        //'./AppRoute': './src/app/app-routing.module.ts'
+        //'./AppRoute': './src/app/app-routing.module.ts',
+        //'./web-components': './src/bootstrap.ts',
     },
 
     shared: {
