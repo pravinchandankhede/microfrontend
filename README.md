@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/github/license/microsoft/semantic-kernel)](https://github.com/pravinchandankhede/microfrontend/blob/main/LICENSE)
+
 # Micro Frontend
 This repository contains the framework to develop Micro Frontends based on Angular, React, Vue and other frameworks. The repository demonstrates various ways of implementing the [Micro Frontend](https://en.wikipedia.org/wiki/Micro_frontend) architecture style in modern web applications.
 
