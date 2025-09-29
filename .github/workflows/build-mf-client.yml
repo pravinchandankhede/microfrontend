@@ -1,4 +1,6 @@
 name: Build & Deploy Angular Client Project
+permissions:
+  contents: read
 
 on:
   push:
