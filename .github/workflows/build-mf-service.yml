@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: D:\a\microfrontend\microfrontend\src\services\webservice.services\bin\Release\net9.0\publish\
+          path: D:\a\microfrontend\microfrontend\src\services\webservice.services\bin\Release\net10.0\publish\
 
   deploy:
     runs-on: windows-latest
