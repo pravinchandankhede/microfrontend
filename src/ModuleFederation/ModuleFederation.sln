@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11123.170 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular18Client", "Clients\Angular18Client\Angular18Client.esproj", "{22B38694-9990-4DB6-A4D1-0AA7E6D3627F}"
 EndProject
@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		run.cmd = run.cmd
 	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular20Client", "Clients\Angular20Client\Angular20Client.esproj", "{DC48428E-4F07-6C2C-E691-12932B3D43F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +62,12 @@ Global
 		{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +78,7 @@ Global
 		{6DFA7C60-9063-42DB-ACB5-36DD8335FF88} = {E11A26AC-106B-4179-AB89-BB3595ACA351}
 		{BF1CC008-2451-4DA8-9466-4B83B4306173} = {EB0C8A50-E9CB-4AC1-A4AF-61510D68ADC2}
 		{B2FCBACA-417B-4179-958C-6CD7DB0EEEA0} = {4674D81F-EE12-43F8-95CA-BE3D77EF2484}
+		{DC48428E-4F07-6C2C-E691-12932B3D43F2} = {4674D81F-EE12-43F8-95CA-BE3D77EF2484}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ED02D52-7ED0-427B-9350-17494C0E8508}
