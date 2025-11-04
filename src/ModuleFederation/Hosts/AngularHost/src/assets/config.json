@@ -1,19 +1,18 @@
 {
-    
-    "mfe4": {
-        "remoteEntry": "http://localhost:4202/remoteEntry.js",
-        "exposedModule": "./ContactDetailsComponent",
-        "displayName": "Contact Details",
-        "routePath": "contact/:id",
-        "ngModuleName": "ContactDetailsComponent",
-        "type": "component"
+    "mfe1": {
+        "remoteEntry": "http://localhost:4201/remoteEntry.js",
+        "exposedModule": "./team-components",
+        "displayName": "Angular 18 Team",
+        "routePath": "team",
+        "ngModuleName": "TeamModule",
+        "type": "module"
     },
-    "mfe5": {
-        "remoteEntry": "http://localhost:4202/remoteEntry.js",
-        "exposedModule": "./StaffComponent",
-        "displayName": "Staff Details",
-        "routePath": "staffdetails",
-        "ngModuleName": "StaffComponent",
-        "type": "component"
+    "mfe2": {
+        "remoteEntry": "http://localhost:4201/remoteEntry.js",
+        "exposedModule": "./cost-components",
+        "displayName": "Angular 18 Cost",
+        "routePath": "cost",
+        "ngModuleName": "CostModule",
+        "type": "module"
     }
 }
