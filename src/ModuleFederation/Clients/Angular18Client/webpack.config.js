@@ -1,4 +1,4 @@
-const { shareAll, shared, share,sharedMappings, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
+const { shareAll, shared, share, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
 
 module.exports = withModuleFederationPlugin({
 
@@ -15,20 +15,16 @@ module.exports = withModuleFederationPlugin({
         './cost-components': './src/app/modules/cost/cost.module.ts'
     },
 
-    //shared: {
-    //    ...shareAll({ requiredVersion: 'auto' }),
-    //    '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: true, requiredVersion: 'auto' },
-
-    //    //...sharedMappings.getDescriptors()
-    //},
-    shared: share({
-        "@angular/core": { requiredVersion: "auto" },
-        "@angular/common": { requiredVersion: "auto" },
-        "@angular/router": { requiredVersion: "auto" },
-        "rxjs": { requiredVersion: "auto" },
-
-        '@pravinchandankhede/mfelibrary': { requiredVersion: 'auto' },
-
-        //...sharedMappings.getDescriptors()
-    }),
+    shared: {
+        "@angular/core": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/common": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/common/http": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/router": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/platform-browser": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/platform-browser-dynamic": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/compiler": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/animations": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "rxjs": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        '@pravinchandankhede/mfelibrary': { singleton: true, strictVersion: false, requiredVersion: 'auto' }
+    },
 });

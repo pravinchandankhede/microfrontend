@@ -28,8 +28,6 @@
         "@angular/router": "18.2.14",
         "@pravinchandankhede/mfelibrary": "0.0.5-alpha8",
         "bootstrap": "5.3.3",
-        "force": "^0.0.3",
-        "jest-editor-support": "*",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
         "zone.js": "~0.14.10"
