@@ -13,6 +13,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: ['20.19.0']
@@ -26,13 +27,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://npm.pkg.github.com'
-       
+               
       - name: Install dependencies
         run: npm install
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Hosts/AngularHost
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGE_READ }}
-         
+             
       - name: Build project
         run: npm run build
         working-directory: /home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Hosts/AngularHost
