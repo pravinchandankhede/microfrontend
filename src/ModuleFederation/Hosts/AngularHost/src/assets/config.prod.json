@@ -5,7 +5,7 @@
         "displayName": "Angular 18 Team",
         "routePath": "team",
         "ngModuleName": "TeamModule",
-        "type": "module" 
+        "type": "module"
     },
     "mfe2": {
         "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
