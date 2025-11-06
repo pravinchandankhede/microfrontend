@@ -15,9 +15,7 @@
         "directory": "src/modulefederation/hosts/angularhost"
     },
     "private": true,
-    "engines": {
-        "node": ">=20.19.0"
-    },
+    
     "dependencies": {
         "@angular-architects/module-federation": "^18.0.6",
         "@angular/animations": "20.3.9",
