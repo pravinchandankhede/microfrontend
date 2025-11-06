@@ -12,10 +12,15 @@ module.exports = withModuleFederationPlugin({
     },
 
     shared: {
-        //'@angular/core': { singleton: false, strictVersion: false, requiredVersion: 'auto' },
-        //'@angular/common': { singleton: false, strictVersion: false, requiredVersion: 'auto' },
-        //'@angular/router': { singleton: false, strictVersion: false, requiredVersion: 'auto' },
-        ...shareAll({ singleton: false, strictVersion: false, requiredVersion: 'auto' }),
-        '@pravinchandankhede/mfelibrary': { singleton: false, strictVersion: false, requiredVersion: '0.0.5-alpha8' }
+        "@angular/core": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/common": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/common/http": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/router": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/platform-browser": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/platform-browser-dynamic": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/compiler": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "@angular/animations": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        "rxjs": { singleton: true, strictVersion: false, requiredVersion: 'auto' },
+        '@pravinchandankhede/mfelibrary': { singleton: true, strictVersion: false, requiredVersion: 'auto' }
     }
 });

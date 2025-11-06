@@ -14,5 +14,21 @@
         "routePath": "cost",
         "ngModuleName": "CostModule",
         "type": "module"
+    },
+    "mfe3": {
+        "remoteEntry": "http://localhost:4202/remoteEntry.js",
+        "exposedModule": "./ContactDetailsComponent",
+        "displayName": "Angular 19 Contact",
+        "routePath": "contact/:id",
+        "ngModuleName": "ContactDetailsComponent",
+        "type": "Component"
+    },
+    "mfe4": {
+        "remoteEntry": "http://localhost:4202/remoteEntry.js",
+        "exposedModule": "./StaffComponent",
+        "displayName": "Angular 19 Staff",
+        "routePath": "staff",
+        "ngModuleName": "StaffComponent",
+        "type": "Component"
     }
 }

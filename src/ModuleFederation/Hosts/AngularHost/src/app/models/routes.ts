@@ -2,7 +2,6 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
 import { CustomManifest } from './config';
 import { APP_ROUTES } from '../app-routing.module';
-
 export function buildRoutes(options: CustomManifest): Routes {
 
     const lazyRoutes: Routes = Object.keys(options).map(key => {
@@ -24,13 +23,11 @@ export function buildRoutes(options: CustomManifest): Routes {
                 path: entry.routePath,
                 loadComponent: () =>
                     loadRemoteModule({
-                        //type: 'manifest',
-                        //remoteName: key,
                         type: 'module',
                         remoteEntry: entry.remoteEntry,
                         exposedModule: entry.exposedModule
                     })
-                        .then(m => m[entry.ngModuleName])
+                        .then(m => m[entry.ngModuleName])                    
             }
         }
         

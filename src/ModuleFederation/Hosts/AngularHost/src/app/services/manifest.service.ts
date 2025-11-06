@@ -10,71 +10,90 @@ import { environment } from '../../environments/environment';
     providedIn: 'root'
 })
 export class ManifestService {
-    remotes: CustomRemoteConfig[] = [];
-    manifestLoaded: boolean = false;
+    private remotes: CustomRemoteConfig[] = [];
+    private manifestLoaded: boolean = false;
+    private readonly configPath = environment.production ? "/assets/config.prod.json" : "/assets/config.json";
 
     constructor(
         private readonly router: Router,
-        private readonly eventBus: EventBus) {
-
-    }
-
-    //public async loadManifestConfig(): Promise<void> {
-    //    let url = environment.production ? "/assets/config.prod.json" : "/assets/config.json";
-
-    //    await loadManifest(url)
-    //        .catch((error: Error) => {
-    //            this.eventBus.emit(new ErrorEvent(new ErrorEventData(error.name, error.message)));
-    //        });
-
-    //    this.manifestLoaded = true;
-    //}
+        private readonly eventBus: EventBus
+    ) {}
 
     public async loadManifestConfig(): Promise<void> {
-        let url = environment.production ? "/assets/config.prod.json" : "/assets/config.json";
-
         try {
-            await loadManifest(url);
+            await loadManifest(this.configPath);
+            const manifest = getManifest<CustomManifest>();
+            
+            // Validate manifest
+            if (!manifest || typeof manifest !== 'object') {
+                throw new Error('Invalid manifest format');
+            }
+
+            // Validate each remote configuration
+            Object.entries(manifest).forEach(([key, config]) => {
+                if (!this.validateRemoteConfig(config as CustomRemoteConfig)) {
+                    throw new Error(`Invalid configuration for remote "${key}"`);
+                }
+            });
+
             this.manifestLoaded = true;
         } catch (error: unknown) {
-            const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-            const errorName = error instanceof Error ? error.name : 'UnknownError';
+            const errorMessage = error instanceof Error ? error.message : 'Unknown error loading manifest';
+            const errorName = error instanceof Error ? error.name : 'ManifestLoadError';
             this.eventBus.emit(new ErrorEvent(new ErrorEventData(errorName, errorMessage)));
-            this.manifestLoaded = false; // Ensure manifestLoaded is false if loading fails
+            this.manifestLoaded = false;
+            throw error; // Re-throw to handle in caller
         }
     }
 
-    //public async configureRoutes(): Promise<CustomRemoteConfig[]> {
-    //    if (!this.manifestLoaded) {
-    //        await this.loadManifestConfig();
-
-    //        const manifest = getManifest<CustomManifest>();
-    //        const routes = buildRoutes(manifest);
-    //        this.router.resetConfig(routes);
-    //        this.remotes = Object.values(manifest);
-    //    }
-
-    //    return this.remotes;
-    //}
-
     public async configureRoutes(): Promise<CustomRemoteConfig[]> {
-        if (!this.manifestLoaded) {
-            await this.loadManifestConfig();
-        }
+        try {
+            if (!this.manifestLoaded) {
+                await this.loadManifestConfig();
+            }
 
-        if (this.manifestLoaded) {
             const manifest = getManifest<CustomManifest>();
-
             if (!manifest) {
-                this.eventBus.emit(new ErrorEvent(new ErrorEventData('ManifestError', 'Manifest is undefined or invalid')));
-                return [];
+                throw new Error('Manifest not loaded or invalid');
             }
 
             const routes = buildRoutes(manifest);
-            this.router.resetConfig(routes);
-            this.remotes = Object.values(manifest);
-        }
+            if (!routes || !Array.isArray(routes)) {
+                throw new Error('Invalid routes configuration');
+            }
 
-        return this.remotes;
+            // Configure routes
+            this.router.resetConfig(routes);
+            
+            // Update remotes
+            this.remotes = Object.values(manifest);
+            
+            return this.remotes;
+        } catch (error: unknown) {
+            const errorMessage = error instanceof Error ? error.message : 'Unknown error configuring routes';
+            const errorName = error instanceof Error ? error.name : 'RouteConfigError';
+            this.eventBus.emit(new ErrorEvent(new ErrorEventData(errorName, errorMessage)));
+            return [];
+        }
+    }
+
+    private validateRemoteConfig(config: CustomRemoteConfig): boolean {
+        return !!(
+            config &&
+            typeof config.remoteEntry === 'string' &&
+            typeof config.exposedModule === 'string' &&
+            typeof config.displayName === 'string' &&
+            typeof config.routePath === 'string' &&
+            typeof config.ngModuleName === 'string' &&
+            typeof config.type === 'string'
+        );
+    }
+
+    public getLoadedRemotes(): CustomRemoteConfig[] {
+        return [...this.remotes];
+    }
+
+    public isManifestLoaded(): boolean {
+        return this.manifestLoaded;
     }
 }
