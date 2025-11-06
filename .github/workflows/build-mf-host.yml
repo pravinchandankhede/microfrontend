@@ -47,4 +47,4 @@ jobs:
           app_location: '/home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Hosts/AngularHost'
           output_location: '/home/runner/work/microfrontend/microfrontend/src/ModuleFederation/Hosts/AngularHost/dist/angular-host'
         env:
-          node: 20
+          node: 20.19.0
