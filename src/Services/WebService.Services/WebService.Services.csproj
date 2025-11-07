@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.AspNetCore.App">
+<Project Sdk="Microsoft.NETCore.App">
 
   <PropertyGroup>
-    <TargetFramework>net8</TargetFramework>
+    <TargetFramework>net10</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
