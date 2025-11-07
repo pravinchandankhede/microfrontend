@@ -1,18 +1,18 @@
 {
     "mfe1": {
         "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
-        "exposedModule": "./Module",
-        "displayName": "Team",
+        "exposedModule": "./team-components",
+        "displayName": "Angular 18 Team",
         "routePath": "team",
         "ngModuleName": "TeamModule",
-        "type": "module"
+        "type": "module" 
     },
     "mfe2": {
         "remoteEntry": "https://green-river-0b3b28a0f.4.azurestaticapps.net/remoteEntry.js",
-        "exposedModule": "./StaffModule",
-        "displayName": "Staff",
-        "routePath": "staff",
-        "ngModuleName": "StaffModule",
+        "exposedModule": "./cost-components",
+        "displayName": "Angular 18 Cost",
+        "routePath": "cost",
+        "ngModuleName": "CostModule",
         "type": "module"
     },
     "mfe3": {
@@ -26,17 +26,17 @@
     "mfe4": {
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./ContactDetailsComponent",
-        "displayName": "Contact Details",
+        "displayName": "Angular 19 Contact",
         "routePath": "contact/:id",
         "ngModuleName": "ContactDetailsComponent",
-        "type": "component"
+        "type": "Component"
     },
     "mfe5": {
         "remoteEntry": "https://happy-coast-09c6d310f.4.azurestaticapps.net/remoteEntry.js",
         "exposedModule": "./StaffComponent",
-        "displayName": "Staff Details",
-        "routePath": "staffdetails",
+        "displayName": "Angular 19 Staff",
+        "routePath": "staff",
         "ngModuleName": "StaffComponent",
-        "type": "component"
+        "type": "Component"
     }
 }
